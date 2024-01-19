@@ -1,2 +1,9 @@
-RightsML_2.0-ontology.ttl
 odrl-profile-template.ttl
+ttl_generated_content.md
+policy.html
+profile.html
+
+.pytest_cache
+__pycache__
+.vscode/
+dev/
