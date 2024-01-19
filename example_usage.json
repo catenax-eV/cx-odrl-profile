@@ -1,0 +1,25 @@
+{
+    "@type": "odrl:Policy",
+    "odrl:profile": "cx-policy:profile",
+    "odrl:permission": [
+        {
+            "odrl:action": "USE",
+            "odrl:constraint": [
+                {
+                    "odrl:leftOperand": "cx-policy:FRAMEWORK#reference",
+                    "odrl:operator": {
+                        "@id": "odrl:eq"
+                    },
+                    "odrl:rightOperand": "cx-policy:FRAMEWORK#industryCore.v1"
+                },
+                {
+                    "odrl:leftOperand": "cx-policy:FRAMEWORK#ContractReference",
+                    "odrl:operator": {
+                        "@id": "odrl:eq"
+                    },
+                    "odrl:rightOperand": "<individual contract-id>"
+                }
+            ]
+        }
+    ]
+}

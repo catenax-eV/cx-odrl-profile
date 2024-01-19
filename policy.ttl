@@ -1,0 +1,130 @@
+@prefix : <http://www.catena-x.net/ns/policy/> .
+
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:odrl-catenax-profile:
+	a owl:Ontology ;
+	rdfs:label "Catena-X Profile Ontology Version"@en ;
+	owl:versionInfo "24.5" ;
+	dct:creator "Matthias Binzer" ;
+    dct:contributor "Catena-X Data Sovereignty Task Force" ;
+	dct:description "Define what of ODRL is used and what additions we make."@en ;
+	rdfs:comment "Catena-X Profile"@en ;
+	dct:conformsTo <https://www.w3.org/TR/odrl-model/> .
+	#dct:license <> .
+
+## Catena-X Profile collection
+# non-normative help:
+# https://w3c.github.io/odrl/profile-bp/#outofscope
+:profile
+    a skos:Collection ;
+    skos:prefLabel "Catena-X ODRL Profile"@en ;
+    skos:scopeNote "This is allowed to be used in Catena-X"@en ;
+    ## Policy
+    skos:member odrl:Policy ;
+    skos:member odrl:uid ;
+    skos:member odrl:profile ;
+    ## Policy Subclasses
+    skos:member odrl:Agreement ;
+    skos:member odrl:Offer ;
+    skos:member odrl:Set ;
+    ## Asset and Relations
+    skos:member odrl:target ;
+    skos:member odrl:hasPolicy ;
+    ## Party and Functions
+    skos:member odrl:assignee ;
+    skos:member odrl:assigner ;
+    ## Permission
+    #skos:member odrl:Permission ;
+    skos:member odrl:permission ;
+	# right now we don't support obligation and prohibition
+    ## Action
+    #skos:member odrl:Action ;
+    skos:member odrl:action ;
+    ## Action for Rules
+    skos:member odrl:use ;
+    ## Constraint
+    #skos:member odrl:Constraint ;
+    skos:member odrl:constraint ;
+    #skos:member odrl:refinement ; # not supported right now!
+    #skos:member odrl:Operator ;
+    skos:member odrl:operator ;
+    #skos:member odrl:RightOperand ;
+    skos:member odrl:rightOperand ;
+    #skos:member odrl:rightOperandReference ; # also references to values are not supported right now
+    #skos:member odrl:LeftOperand ;
+    skos:member odrl:leftOperand ;
+	## Logical Constraint # not supported right now, because we do not want OR or other LogicalConstraints
+	# everythin is an AND right now!
+	## Constraint Operands
+    skos:member odrl:eq ;
+	# no other operands supported right now!
+	#skos:member odrl:isA ; # can this be used? might be helpful!
+	#
+	# defined here in CX
+	# TODO: how to integrate another collection
+	# is this valid?
+	#skos:member <:profile#leftOperands> ;
+	skos:member :contractReference ;
+	skos:member :frameworkAgreement ;
+	skos:member :purpose .
+
+
+<:profile#leftOperands>
+    a skos:Collection ;
+    skos:prefLabel "Possible leftOperands"@en ;
+    skos:scopeNote "This is allowed to be used in Catena-X"@en ;
+	skos:member :contractReference ;
+	skos:member :frameworkAgreement ;
+	skos:member :purpose .
+
+
+
+
+<:contractReference>
+	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
+	#rdfs:isDefinedBy : ;
+	rdfs:label "Reference to an existing (paper) contract"@en ;
+	skos:definition "Legally binding definition goes here"@en ;
+	skos:note "Additional notes and explanations goes here"@en ;
+    skos:scopeNote "Catena-X"@en .
+
+
+<:frameworkAgreement>
+	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
+	#rdfs:isDefinedBy : ;
+	rdfs:label "Framework Agreement used for this negotiation / agreement"@en ;
+	skos:definition "Legally binding definition goes here"@en ;
+	skos:note "Additional notes and explanations goes here"@en ;
+    skos:scopeNote "Catena-X"@en .
+
+
+<:purpose>
+	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
+	#rdfs:isDefinedBy : ;
+	rdfs:label "Purpose"@en ;
+	skos:definition "Legally binding definition goes here"@en ;
+	skos:note "Additional pre-defined purposes for a contract."@en ;
+    skos:scopeNote "Catena-X"@en .
+
+
+## taken from upstream: odrl-core-profile-22.ttl
+## Declaration of annotation properties to keep the ontology within OWL DL
+
+	skos:member rdf:type owl:AnnotationProperty .
+	skos:note rdf:type owl:AnnotationProperty .
+	skos:scopeNote rdf:type owl:AnnotationProperty .
+	skos:prefLabel rdf:type owl:AnnotationProperty .
+	dct:license rdf:type owl:AnnotationProperty .
+	dct:contributor rdf:type owl:AnnotationProperty .
+	dct:conformsTo rdf:type owl:AnnotationProperty .
+	dct:creator rdf:type owl:AnnotationProperty .
+	dct:description rdf:type owl:AnnotationProperty .
+	skos:Collection a owl:Class .
+
