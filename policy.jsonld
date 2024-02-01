@@ -1,0 +1,85 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "odrl": "http://www.w3.org/ns/odrl/2/",
+        "cx-policy": "https://w3id.org/catenax/policy/#",
+        "uid": "@id",
+        "type": "@type",
+        "Policy": "odrl:Policy",
+        "Rule": "odrl:Rule",
+        "profile": {
+            "@type": "@id",
+            "@id": "odrl:profile"
+        },
+        "Agreement": "odrl:Agreement",
+        "Offer": "odrl:Offer",
+        "Set": "odrl:Set",
+        "relation": {
+            "@type": "@id",
+            "@id": "odrl:relation"
+        },
+        "hasPolicy": {
+            "@type": "@id",
+            "@id": "odrl:hasPolicy"
+        },
+        "Party": "odrl:Party",
+        "assignee": {
+            "@type": "@id",
+            "@id": "odrl:assignee"
+        },
+        "assigner": {
+            "@type": "@id",
+            "@id": "odrl:assigner"
+        },
+        "Action": "odrl:Action",
+        "action": {
+            "@type": "@vocab",
+            "@id": "odrl:action"
+        },
+        "Permission": "odrl:Permission",
+        "permission": {
+            "@type": "@id",
+            "@id": "odrl:permission"
+        },
+        "Prohibition": "odrl:Prohibition",
+        "prohibition": {
+            "@type": "@id",
+            "@id": "odrl:prohibition"
+        },
+        "obligation": {
+            "@type": "@id",
+            "@id": "odrl:obligation"
+        },
+        "use": "odrl:use",
+        "Constraint": "odrl:Constraint",
+        "constraint": {
+            "@type": "@id",
+            "@id": "odrl:constraint"
+        },
+        "Operator": "odrl:Operator",
+        "operator": {
+            "@type": "@vocab",
+            "@id": "odrl:operator"
+        },
+        "RightOperand": "odrl:RightOperand",
+        "rightOperand": "odrl:rightOperand",
+        "LeftOperand": "odrl:LeftOperand",
+        "leftOperand": {
+            "@type": "@vocab",
+            "@id": "odrl:leftOperand"
+        },
+        "eq": "odrl:eq",
+        "odrl:leftOperand": {
+            "@type": "@vocab",
+            "@id": "odrl:leftOperand"
+        },
+        "odrl:rightOperand": {
+            "@type": "@vocab",
+            "@id": "odrl:rightOperand"
+        },
+
+        "framework": { "@type": "@vocab", "@id": "cx-policy:framework" },
+        "cx-policy:frameworkAgreementTraceability.v1": "cx-policy:frameworkAgreementTraceability.v1",
+        "contractReference": { "@type": "@id", "@id": "cx-policy:contractReference" }
+    }
+}
