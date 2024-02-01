@@ -74,12 +74,11 @@
             "@id": "odrl:leftOperand"
         },
         "odrl:rightOperand": {
-            "@type": "@vocab",
-            "@id": "odrl:rightOperand"
+            "@type": "@vocab"
         },
 
-        "framework": { "@type": "@vocab", "@id": "cx-policy:framework" },
-        "cx-policy:frameworkAgreementTraceability.v1": "cx-policy:frameworkAgreementTraceability.v1",
+        "framework": { "@type": "@id", "@id": "cx-policy:framework" },
+        
         "contractReference": { "@type": "@id", "@id": "cx-policy:contractReference" }
     }
 }
