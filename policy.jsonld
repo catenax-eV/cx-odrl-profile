@@ -1,7 +1,7 @@
 {
     "@context": {
         "@version": 1.1,
-        "odrl": "http://www.w3.org/ns/odrl/2/",
+        
         "cx-policy": "https://w3id.org/catenax/policy/#",
         "uid": "@id",
         "type": "@type",
@@ -73,12 +73,9 @@
             "@type": "@vocab",
             "@id": "odrl:leftOperand"
         },
-        "odrl:rightOperand": {
-            "@type": "@vocab"
-        },
 
         "framework": { "@type": "@id", "@id": "cx-policy:framework" },
-        
+        "cx-policy:frameworkAgreementTraceability.v1": { "@type": "@id", "@id": "cx-policy:frameworkAgreementTraceability.v1" },
         "contractReference": { "@type": "@id", "@id": "cx-policy:contractReference" }
     }
 }

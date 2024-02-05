@@ -25,6 +25,8 @@ def file_document_loader(*args, **kwargs):
             fn = "ODRL22.jsonld"
         if url == "https://w3id.org/catenax/policy/":
             fn = "policy.jsonld"
+        if url == "https://w3id.org/tractusx/v0.0.1/ns/":
+            fn = "tx_terms.json"
         assert fn
         with open(fn, 'rt') as f:
             data = f.read()
@@ -44,9 +46,10 @@ jsonld.set_document_loader(file_document_loader())
 def test_value():
     policy =   {
         "@context": [
-            #{"odrl": "http://www.w3.org/ns/odrl/2/"},
+            {"odrl": "http://www.w3.org/ns/odrl/2/"},
             #{"cx-policy": "https://w3id.org/catenax/policy/"},
             "https://w3id.org/catenax/policy/",
+            #"https://w3id.org/tractusx/v0.0.1/ns/",
         ],
 
         "@type": "odrl:Policy",
@@ -56,19 +59,19 @@ def test_value():
             # "odrl:target": "",
             "odrl:constraint": [
             {
-                "odrl:leftOperand": "framework",
+                "odrl:leftOperand": "cx-policy:FrameworkAgreement.traceability",
                 "odrl:operator": {
                 "@id": "odrl:eq"
                 },
-                "odrl:rightOperand": "cx-policy:frameworkAgreementTraceability.v1"
-            },
-            {
-                "odrl:leftOperand": "contractReference",
-                "odrl:operator": {
-                "@id": "odrl:eq"
-                },
-                "odrl:rightOperand": "12345"
-            },
+                "odrl:rightOperand": "active[1.0]"
+            }
+            # {
+            #     "odrl:leftOperand": "contractReference",
+            #     "odrl:operator": {
+            #     "@id": "odrl:eq"
+            #     },
+            #     "odrl:rightOperand": "12345"
+            # },
             # {
             #     "odrl:leftOperand": "cx-policy:whyPurpose",
             #     "odrl:operator": {
