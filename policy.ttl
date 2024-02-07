@@ -10,22 +10,22 @@
 
 :odrl-catenax-profile:
 	a owl:Ontology ;
-	rdfs:label "Catena-X Profile Ontology Version"@en ;
+	rdfs:label "Catena-X Profile Ontology Version" ;
 	owl:versionInfo "24.5" ;
 	dct:creator "Matthias Binzer" ;
     dct:contributor "Catena-X Data Sovereignty Task Force" ;
-	dct:description "Define what of ODRL is used and what additions we make."@en ;
-	rdfs:comment "Catena-X Profile"@en ;
+	dct:description "Define what of ODRL is used and what additions we make." ;
+	rdfs:comment "Catena-X Profile" ;
 	dct:conformsTo <https://www.w3.org/TR/odrl-model/> .
 	#dct:license <> .
 
 ## Catena-X Profile collection
 # non-normative help:
 # https://w3c.github.io/odrl/profile-bp/#outofscope
-<:profile>
+<:profile2405>
     a skos:Collection ;
-    skos:prefLabel "Catena-X ODRL Profile"@en ;
-    skos:scopeNote "This is allowed to be used in Catena-X"@en ;
+    skos:prefLabel "Catena-X ODRL Profile for Release 24.05 (and future use)" ;
+    skos:scopeNote "This is allowed to be used in Catena-X" ;
     ## Policy
     skos:member odrl:Policy ;
     skos:member odrl:uid ;
@@ -78,16 +78,16 @@
 
 <:leftOperands>
     a skos:Collection ;
-    skos:prefLabel "Possible leftOperands"@en ;
-    skos:scopeNote "This is allowed to be used in Catena-X"@en ;
+    skos:prefLabel "Possible leftOperands" ;
+    skos:scopeNote "This is allowed to be used in Catena-X" ;
 	skos:member :framework ;
 	skos:member :contractReference ;
 	skos:member :purpose .
 
 <:rightOperands>
     a skos:Collection ;
-    skos:prefLabel "Possible rightOperands"@en ;
-    skos:scopeNote "This is allowed to be used in Catena-X"@en ;
+    skos:prefLabel "Possible rightOperands" ;
+    skos:scopeNote "This is allowed to be used in Catena-X" ;
 	skos:member :frameworkAgreementPcf ;
 	skos:member :frameworkAgreementTraceability .
 
@@ -95,52 +95,52 @@
 <:framework>
 	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
 	#rdfs:isDefinedBy : ;
-	rdfs:label "The framework the negotiation is based on. Also known as Use Case Agreement."@en ;
-	skos:definition "Legally binding definition goes here"@en ;
-	skos:note "Additional notes and explanations goes here"@en ;
-    skos:scopeNote "Catena-X"@en .
+	rdfs:label "The framework the negotiation is based on. Also known as Use Case Agreement." ;
+	skos:definition "Legally binding definition goes here" ;
+	skos:note "Additional notes and explanations goes here" ;
+    skos:scopeNote "Catena-X" .
 
 
 <:contractReference>
 	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
 	#rdfs:isDefinedBy : ;
-	rdfs:label "Reference to an existing (paper) contract"@en ;
-	skos:definition "Legally binding definition goes here"@en ;
-	skos:note "Additional notes and explanations goes here"@en ;
-    skos:scopeNote "Catena-X"@en .
+	rdfs:label "Reference to an existing (paper) contract" ;
+	skos:definition "Legally binding definition goes here" ;
+	skos:note "Additional notes and explanations goes here" ;
+    skos:scopeNote "Catena-X" .
 
 
 <:frameworkAgreement>
 	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
 	rdfs:isDefinedBy : ;
-	rdfs:label "Framework Agreement used for this negotiation / agreement"@en ;
-	skos:definition "Legally binding definition goes here"@en ;
-	skos:note "Additional notes and explanations goes here"@en ;
-    skos:scopeNote "Catena-X"@en .
+	rdfs:label "Framework Agreement used for this negotiation / agreement" ;
+	skos:definition "Legally binding definition goes here" ;
+	skos:note "Additional notes and explanations goes here" ;
+    skos:scopeNote "Catena-X" .
 
 <:frameworkAgreementPcf.v1>
 	a :frameworkAgreement, owl:NamedIndividual, skos:Concept ;
 	rdfs:isDefinedBy : ;
-	rdfs:label "Framework Agreement for the PCF use case"@en ;
-	skos:definition "Legally binding definition goes here"@en ;
-	skos:note "Additional notes and explanations goes here"@en ;
-    skos:scopeNote "Catena-X"@en .
+	rdfs:label "Framework Agreement for the PCF use case" ;
+	skos:definition "Legally binding definition goes here" ;
+	skos:note "Additional notes and explanations goes here" ;
+    skos:scopeNote "Catena-X" .
 
 <:frameworkAgreementTraceability.v1>
 	a :frameworkAgreement, owl:NamedIndividual, skos:Concept ;
 	rdfs:isDefinedBy : ;
-	rdfs:label "Framework Agreement for the Traceability use case"@en ;
-	skos:definition "Legally binding definition goes here"@en ;
-	skos:note "Additional notes and explanations goes here"@en ;
-    skos:scopeNote "Catena-X"@en .
+	rdfs:label "Framework Agreement for the Traceability use case" ;
+	skos:definition "Legally binding definition goes here" ;
+	skos:note "Additional notes and explanations goes here" ;
+    skos:scopeNote "Catena-X" .
 
 <:purpose>
 	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
 	#rdfs:isDefinedBy : ;
-	rdfs:label "Purpose"@en ;
-	skos:definition "Legally binding definition goes here"@en ;
-	skos:note "Additional pre-defined purposes for a contract."@en ;
-    skos:scopeNote "Catena-X"@en .
+	rdfs:label "Purpose" ;
+	skos:definition "Legally binding definition goes here" ;
+	skos:note "Additional pre-defined purposes for a contract." ;
+    skos:scopeNote "Catena-X" .
 
 
 ## taken from upstream: odrl-core-profile-22.ttl
