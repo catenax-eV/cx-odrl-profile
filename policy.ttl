@@ -22,10 +22,11 @@
 ## Catena-X Profile collection
 # non-normative help:
 # https://w3c.github.io/odrl/profile-bp/#outofscope
+#
 <:profile2405>
     a skos:Collection ;
     skos:prefLabel "Catena-X ODRL Profile for Release 24.05 (and future use)" ;
-    skos:scopeNote "This is allowed to be used in Catena-X" ;
+    skos:scopeNote "This is the supported set of definitions used in Catena-X. If parties agree on addtional parts of the ODRL languge, it is their choice." ;
     ## Policy
     skos:member odrl:Policy ;
     skos:member odrl:uid ;
@@ -44,21 +45,22 @@
     #skos:member odrl:Permission ;
     skos:member odrl:permission ;
 	# right now we don't support obligation and prohibition
-    ## Action
-    #skos:member odrl:Action ;
+
+    ## Action - one is the type and one is the property
+    skos:member odrl:Action ;
     skos:member odrl:action ;
     ## Action for Rules
     skos:member odrl:use ;
     ## Constraint
-    #skos:member odrl:Constraint ;
+    skos:member odrl:Constraint ;
     skos:member odrl:constraint ;
     #skos:member odrl:refinement ; # not supported right now!
-    #skos:member odrl:Operator ;
+    skos:member odrl:Operator ;
     skos:member odrl:operator ;
-    #skos:member odrl:RightOperand ;
+    skos:member odrl:RightOperand ;
     skos:member odrl:rightOperand ;
     #skos:member odrl:rightOperandReference ; # also references to values are not supported right now
-    #skos:member odrl:LeftOperand ;
+    skos:member odrl:LeftOperand ;
     skos:member odrl:leftOperand ;
 	## Logical Constraint # not supported right now, because we do not want OR or other LogicalConstraints
 	# everythin is an AND right now!
@@ -68,21 +70,17 @@
 	#skos:member odrl:isA ; # can this be used? might be helpful!
 	#
 	# defined here in CX
-	# TODO: how to integrate another collection
-	# is this valid?
-	#skos:member <:profile#leftOperands> ;
-	skos:member :contractReference ;
-	skos:member :frameworkAgreement ;
-	skos:member :purpose .
+	skos:member :usecaseFramework ;
+	skos:member :UsecaseFrameworkRightOperand ;
+	skos:member :frameworkTraceability.v1 ;
+	skos:member :frameworkPcf.v1 ;
+	skos:member :frameworkQuality.v1 ;
+	skos:member :individualFrameContractReference ;
+	skos:member :individualContractReference ;
+	skos:member :contractPurpose ;
+	skos:member :ContractPurposeRightOperand ;
+	skos:member :legalRequirementForThirdparty.v1 .
 
-
-<:leftOperands>
-    a skos:Collection ;
-    skos:prefLabel "Possible leftOperands" ;
-    skos:scopeNote "This is allowed to be used in Catena-X" ;
-	skos:member :framework ;
-	skos:member :contractReference ;
-	skos:member :purpose .
 
 <:rightOperands>
     a skos:Collection ;
@@ -91,56 +89,104 @@
 	skos:member :frameworkAgreementPcf ;
 	skos:member :frameworkAgreementTraceability .
 
-
-<:framework>
-	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
+###########
+# Use Case Framework Agreements
+###########
+# leftOperand
+<:usecaseFramework>
+	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
 	#rdfs:isDefinedBy : ;
 	rdfs:label "The framework the negotiation is based on. Also known as Use Case Agreement." ;
-	skos:definition "Legally binding definition goes here" ;
-	skos:note "Additional notes and explanations goes here" ;
+	skos:definition "Legally binding definition goes here. Only predefined values are allowed." ;
+	#skos:note "Additional notes and explanations goes here" ;
     skos:scopeNote "Catena-X" .
 
-
-<:contractReference>
-	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
-	#rdfs:isDefinedBy : ;
-	rdfs:label "Reference to an existing (paper) contract" ;
-	skos:definition "Legally binding definition goes here" ;
-	skos:note "Additional notes and explanations goes here" ;
-    skos:scopeNote "Catena-X" .
-
-
-<:frameworkAgreement>
-	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
+# predefined rightOperands for the Use Case Frameowork Agreements
+# captial 'U' because class / abstract class / type
+# We have 1 abstract such Use Case Framework RightOpardns and a few specific ones
+<:UsecaseFrameworkRightOperand>
+	a odrl:RightOperand, owl:NamedIndividual, skos:Concept ;
 	rdfs:isDefinedBy : ;
-	rdfs:label "Framework Agreement used for this negotiation / agreement" ;
-	skos:definition "Legally binding definition goes here" ;
-	skos:note "Additional notes and explanations goes here" ;
+	rdfs:label "Abstract RightOperand class" ;
+	skos:definition "" ;
+	skos:note "" ;
     skos:scopeNote "Catena-X" .
 
-<:frameworkAgreementPcf.v1>
-	a :frameworkAgreement, owl:NamedIndividual, skos:Concept ;
+# lower 'f' because used not as @type, but as value / @id
+<:frameworkTraceability.v1>
+	a :UsecaseFrameworkRightOperand, owl:NamedIndividual, skos:Concept ;
 	rdfs:isDefinedBy : ;
-	rdfs:label "Framework Agreement for the PCF use case" ;
-	skos:definition "Legally binding definition goes here" ;
-	skos:note "Additional notes and explanations goes here" ;
+	rdfs:label "Traceability Framework" ;
+	skos:definition "TODO: Legal: Both parties accept to use the Traceability Framework as their basis." ;
+	skos:note "" ;
     skos:scopeNote "Catena-X" .
 
-<:frameworkAgreementTraceability.v1>
-	a :frameworkAgreement, owl:NamedIndividual, skos:Concept ;
+<:frameworkPcf.v1>
+	a odrl:UsecaseFrameworkRightOperand, owl:NamedIndividual, skos:Concept ;
 	rdfs:isDefinedBy : ;
-	rdfs:label "Framework Agreement for the Traceability use case" ;
-	skos:definition "Legally binding definition goes here" ;
-	skos:note "Additional notes and explanations goes here" ;
+	rdfs:label "PCF Framework" ;
+	skos:definition "TODO: Legal: Both parties accept to use the PCF Framework as their basis." ;
+	skos:note "" ;
     skos:scopeNote "Catena-X" .
 
-<:purpose>
-	a odrl:leftOperand, owl:NamedIndividual, skos:Concept ;
-	#rdfs:isDefinedBy : ;
-	rdfs:label "Purpose" ;
-	skos:definition "Legally binding definition goes here" ;
-	skos:note "Additional pre-defined purposes for a contract." ;
+<:frameworkQuality.v1>
+	a odrl:UsecaseFrameworkRightOperand, owl:NamedIndividual, skos:Concept ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Quality Framework" ;
+	skos:definition "TODO: Legal: Both parties accept to use the Quality Framework as their basis." ;
+	skos:note "" ;
     skos:scopeNote "Catena-X" .
+### End of Use Case Framworks ###
+
+
+##########
+# Individual *Frame Contract* Agreements that are referenced.
+##########
+<:individualFrameContractReference>
+	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
+	rdfs:label "An individual Contract as a basis for the exchange" ;
+	skos:definition "TODO: LEGAL: A generic / *frame contract* referenced. Both parties are able to identify such a contract by the given identifier value." ;
+	skos:note "The value for this is a free to choose reference under which both parties are able to identify their contract." ;
+    skos:scopeNote "Catena-X" .
+
+##########
+# Individual (very specific) contracts that are referenced.
+##########
+<:individualContractReference>
+	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
+	rdfs:label "An individual Contract as a basis for the exchange" ;
+	skos:definition '''TODO: LEGAL: A very specific data exchange / data usage contract between the parties.
+		In consequence the referenced contract is the legal basis instead of a newly created contract during the DSP protocol negotiation.
+		The DSP negotiation is NOT considered a a contract negotiation, but only acts as a tool.''' ;
+	skos:note "The value for this is a free to choose reference under which both parties are able to identify their contract." ;
+    skos:scopeNote "Catena-X" .
+
+##########
+# A Contract PURPOSE - what is allowed to be done with the data
+##########
+<:contractPurpose>
+	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
+	rdfs:label "The purpose of the contract. For what the data is allowed to be used." ;
+	skos:definition "TODO: LEGAL: The provider grants permissions to the transferred data in the described manner." ;
+    skos:scopeNote "Catena-X" .
+
+<:ContractPurposeRightOperand>
+	a odrl:RightOperand, owl:NamedIndividual, skos:Concept ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Abstract RightOperand class" ;
+	skos:definition "" ;
+	skos:note "" ;
+    skos:scopeNote "Catena-X" .
+
+<:legalRequirementForThirdparty.v1>
+	a :ContractPurposeRightOperand, owl:NamedIndividual, skos:Concept ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "" ;
+	skos:definition "TODO: Legal:" ;
+	skos:note "" ;
+    skos:scopeNote "Catena-X" .
+
+### end Contract Purpose ###
 
 
 ## taken from upstream: odrl-core-profile-22.ttl
