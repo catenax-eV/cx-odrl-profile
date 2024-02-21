@@ -5,7 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 
 import rdflib
+import json
 from string import Template
+import chevron
 
 TABLE_DEF ="""
 ### $title
@@ -51,7 +53,7 @@ def generate(fn: str, out_fn: str):
     g.parse(data=data, format='turtle')
 
     data = ""
-
+    mustache_data = {}
     for q in [
             'odrl:LeftOperand', 'odrl:RightOperand', ':usecaseFrameworkRightOperand', ':contractPurposeRightOperand']:
         query = query_prepare(query_for=q)
@@ -59,8 +61,23 @@ def generate(fn: str, out_fn: str):
         data = data + f"{q} classes\n======================================"
 
         for row in qres:
+            # mustache Readme approach
+            if not q in mustache_data:
+                mustache_data[q] = []
+            mustache_data[q].append({
+                'title': str(row.xnoprefix),
+                'definition': str(row.definition),
+                'label': str(row.label),
+                'identifier': str(row.x),
+                'note': str(row.note),
+                'myclass': str(q),
+                'subclassOf': str(row.subclassOf) or '',
+            })
+
             print(f"{row.x} {row.label}")
             print(f"{row.xnoprefix}")
+
+            # generate a file to integrate with 'bikeshed'
             item = Template(TABLE_DEF).substitute(
                 title = row.xnoprefix,
                 definition = row.definition,
@@ -75,6 +92,18 @@ def generate(fn: str, out_fn: str):
     with open(out_fn, 'wt') as f:
         f.write(data)
 
+    # now the mustache version of it
+    profile_template = ''
+    with open('profile_template.md', 'rt') as f:
+        profile_template = f.read()
+    args = {
+        'template': profile_template,
+        'data': mustache_data
+    }
+    rendered_profile = chevron.render(**args)
+    with open('profile.md', 'wt') as f:
+        f.write(rendered_profile)
+
 
 if __name__ == '__main__':
-    generate('policy.ttl', 'ttl_generated_content.md')
+    generate('profile.ttl', 'ttl_generated_content.md')
