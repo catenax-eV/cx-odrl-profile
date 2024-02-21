@@ -75,7 +75,7 @@
 	skos:member :FrameworkAgreemenValue ;
 	skos:member :ContractReference ;
 	skos:member :UsagePurpose ;
-	skos:member :UsagePurposeValue ;
+	skos:member :UsagePurposeValue .
 
 
 ###########
@@ -87,10 +87,11 @@
 	rdfs:isDefinedBy : ;
 	rdfs:label "The framework the negotiation is based on. Also known as Usecase Framework." ;
 	skos:definition '''Defines to include the Usecase Framework as legally binding content of the negotiation.
-		Usecase Frameworks are published here:
-		https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-data-space-operations
-		''' ;
-	#skos:note "Additional notes and explanations goes here" ;
+Usecase Frameworks are published here:
+
+https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-data-space-operations
+''' ;
+	#skos:note "" ;
     skos:scopeNote "Catena-X" .
 
 # predefined rightOperands for the Use Case Frameowork Agreements
@@ -100,17 +101,23 @@
 	rdfs:isDefinedBy : ;
 	rdfs:label "FrameworkAgreement rightOperand values" ;
 	skos:definition '''FrameworkAgreement as a leftOperand allows the following defined values (@value), NOT identifiers (@id).
-		By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
-		- traceability:v1.0
-		- pcf:v1.0
-		- quality:v1.0
-		- circulareconomy:v1.0
-		- behaviortwin:v1.0
-		- sustainability:v1.0
-		
-		It declares the individual Usecase Framework identified by name and version that is used for the data usage negotiation.
-		''' ;
-	skos:note "" ;
+By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
+
+- traceability:v1.0
+
+- pcf:v1.0
+
+- quality:v1.0
+
+- circulareconomy:v1.0
+
+- behaviortwin:v1.0
+
+- sustainability:v1.0
+
+It declares the individual Usecase Framework identified by name and version that is used for the data usage negotiation.
+''' ;
+	#skos:note "" ;
     skos:scopeNote "Catena-X" .
 
 
@@ -130,7 +137,7 @@
 :UsagePurpose
 	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
 	rdfs:label "The purpose of the contract. For what the data is allowed to be used." ;
-	skos:definition "" ;
+	skos:definition "Legally binding purpose description." ;
 	skos:note "Allowed are standardized RightOperands and free text values" ;
     skos:scopeNote "Catena-X" .
 
@@ -139,13 +146,18 @@
 	rdfs:isDefinedBy : ;
 	rdfs:label "" ;
 	skos:definition '''Legally binding definition of the purpose of this negotiation.
-		By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
-		TODO: list from todays Usecase Frameworks needs to go here!
-		qualityNotifications:v1.0: The data can be used for quality analysis to identify and select affected components and to send quality notifications to affected customers or suppliers.
-		legalRequirementForThirdparty:v1.0: Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules & high-voltage batteries.
-		term: definition
-		''' ;
-	skos:note "" ;
+
+By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
+
+TODO: list from todays Usecase Frameworks needs to go here!
+
+**qualityNotifications:v1.0**: The data can be used for quality analysis to identify and select affected components and to send quality notifications to affected customers or suppliers.
+
+**legalRequirementForThirdparty:v1.0**: Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules & high-voltage batteries.
+
+**term**: definition
+''' ;
+	#skos:note "" ;
     skos:scopeNote "Catena-X" .
 ### end Contract Purpose ###
 

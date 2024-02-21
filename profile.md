@@ -1,24 +1,61 @@
-# CX
+# Catena-X ODRL Profile
 This is the Catena-X ODRL Profile.
 
-The machine readable details can be found in [./policy.ttl](./policy.ttl)
+The machine readable details can be found in the `*.ttl` file. The content below is generated out of those files.
 
-The content below is generated out of the *.ttl file.
+## Legally binding term definitions
+**The participants are free to use the following term definitions. But whenever they are used, the Participants do accept their below described legal meaning with their Membership in the Catena-X Dataspace and the acceptance of the individual Usecase Frameworks.**
 
 # LeftOperand
-## usecaseFramework
-Legally binding definition goes here. Only predefined values are allowed.
-## individualFrameContractReference
-TODO: LEGAL: A generic / *frame contract* referenced. Both parties are able to identify such a contract by the given identifier value.
-## individualContractReference
-TODO: LEGAL: A very specific data exchange / data usage contract between the parties.
-		In consequence the referenced contract is the legal basis instead of a newly created contract during the DSP protocol negotiation.
-		The DSP negotiation is NOT considered a a contract negotiation, but only acts as a tool.
-## contractPurpose
-TODO: LEGAL: The provider grants permissions to the transferred data in the described manner.
+## FrameworkAgreement
+### Description (not binding)
+The framework the negotiation is based on. Also known as Usecase Framework.
+### Definition (legally binding)
+Defines to include the Usecase Framework as legally binding content of the negotiation.
+Usecase Frameworks are published here:
+
+https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-data-space-operations
+
+## ContractReference
+### Description (not binding)
+A reference to a contract
+### Definition (legally binding)
+A reference to an existing, individual contract as a basis for the negotiation. This can be a frame contract or a very specific contract.
+## UsagePurpose
+### Description (not binding)
+The purpose of the contract. For what the data is allowed to be used.
+### Definition (legally binding)
+Legally binding purpose description.
 
 # RightOperand
-## usecaseFrameworkRightOperand
+## FrameworkAgreemenValue
+FrameworkAgreement as a leftOperand allows the following defined values (@value), NOT identifiers (@id).
+By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
 
-## contractPurposeRightOperand
+- traceability:v1.0
+
+- pcf:v1.0
+
+- quality:v1.0
+
+- circulareconomy:v1.0
+
+- behaviortwin:v1.0
+
+- sustainability:v1.0
+
+It declares the individual Usecase Framework identified by name and version that is used for the data usage negotiation.
+
+## UsagePurposeValue
+Legally binding definition of the purpose of this negotiation.
+
+By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
+
+TODO: list from todays Usecase Frameworks needs to go here!
+
+**qualityNotifications:v1.0**: The data can be used for quality analysis to identify and select affected components and to send quality notifications to affected customers or suppliers.
+
+**legalRequirementForThirdparty:v1.0**: Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules &amp; high-voltage batteries.
+
+**term**: definition
 
