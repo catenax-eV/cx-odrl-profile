@@ -9,18 +9,6 @@ import json
 from string import Template
 import chevron
 
-TABLE_DEF ="""
-### $title
-<pre class='simpledef'>
-Identifier: <a href="$identifier">$identifier</a>
-Definition: $definition
-Label: $label
-Note: $note
-Class: $myclass
-SubClassOf: <a href="$subclassOf">$subclassOf</a>
-</pre>
-"""
-
 def query_prepare(query_for: str = 'odrl:LeftOperand'):
     query_template = """
     prefix : <https://w3id.org/catenax/policy/#>
@@ -43,25 +31,22 @@ def query_prepare(query_for: str = 'odrl:LeftOperand'):
     )
     return query
 
-def generate(fn: str, out_fn: str):
+def generate(ttl_fn: str, template_fn: str, out_fn: str):
 
     data = None
-    with open(fn, 'rt') as f:
+    with open(ttl_fn, 'rt') as f:
         data = f.read()
 
     g = rdflib.Graph()
     g.parse(data=data, format='turtle')
 
-    data = ""
     mustache_data = {}
     for q in [
             'odrl:LeftOperand', 'odrl:RightOperand', ':usecaseFrameworkRightOperand', ':contractPurposeRightOperand']:
         query = query_prepare(query_for=q)
         qres = g.query(query)
-        data = data + f"{q} classes\n======================================"
 
         for row in qres:
-            # mustache Readme approach
             if not q in mustache_data:
                 mustache_data[q] = []
             mustache_data[q].append({
@@ -74,36 +59,20 @@ def generate(fn: str, out_fn: str):
                 'subclassOf': str(row.subclassOf) or '',
             })
 
-            print(f"{row.x} {row.label}")
-            print(f"{row.xnoprefix}")
+            #print(f"{row.x} {row.label}")
+            #print(f"{row.xnoprefix}")
 
-            # generate a file to integrate with 'bikeshed'
-            item = Template(TABLE_DEF).substitute(
-                title = row.xnoprefix,
-                definition = row.definition,
-                label = row.label,
-                identifier = row.x,
-                note = row.note,
-                myclass = q,
-                subclassOf = row.subclassOf or '',
-            )
-            data = data + item + "\n"
-
-    with open(out_fn, 'wt') as f:
-        f.write(data)
-
-    # now the mustache version of it
     profile_template = ''
-    with open('profile_template.md', 'rt') as f:
+    with open(template_fn, 'rt') as f:
         profile_template = f.read()
     args = {
         'template': profile_template,
         'data': mustache_data
     }
     rendered_profile = chevron.render(**args)
-    with open('profile.md', 'wt') as f:
+    with open(out_fn, 'wt') as f:
         f.write(rendered_profile)
 
 
 if __name__ == '__main__':
-    generate('profile.ttl', 'ttl_generated_content.md')
+    generate(ttl_fn='profile.ttl', template_fn='profile_template.md', out_fn='profile.md')
