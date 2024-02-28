@@ -1,5 +1,5 @@
-@base <https://w3id.org/catenax/policy/#> .
-@prefix : <https://w3id.org/catenax/policy/#> .
+@base <https://w3id.org/catenax/policy/v1.0.0/> .
+@prefix : <https://w3id.org/catenax/policy/v1.0.0/> .
 
 @prefix dct:  <http://purl.org/dc/terms/> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
@@ -12,7 +12,7 @@
 :odrl-catenax-profile:
 	a owl:Ontology ;
 	rdfs:label "Catena-X Profile Ontology Version" ;
-	owl:versionInfo "24.5" ;
+	owl:versionInfo "2405.0" ;
 	dct:creator "Matthias Binzer" ;
     dct:contributor "Catena-X Regulatory Framework Expert Group operating under the Data Space Operations Comitee" ;
 	dct:description "Defines what of ODRL is used and the legally binding term definitions." ;
@@ -99,8 +99,8 @@ https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-da
 :FrameworkAgreemenValue
 	a odrl:RightOperand, owl:NamedIndividual, skos:Concept ;
 	rdfs:isDefinedBy : ;
-	rdfs:label "FrameworkAgreement rightOperand values" ;
-	skos:definition '''FrameworkAgreement as a leftOperand allows the following defined values (@value), NOT identifiers (@id).
+	rdfs:label "FrameworkAgreement rightOperand values. To be used as literals (@value), NOT identifiers (@id)" ;
+	skos:definition '''FrameworkAgreement as a leftOperand allows the following defined values.
 By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
 
 - traceability:v1.0

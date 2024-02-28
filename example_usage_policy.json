@@ -10,23 +10,25 @@
     "permission": [
         {
             "action": "use",
-            "constraint": [
-                {
-                    "leftOperand": "cx-policy:FrameworkAgreement",
-                    "operator": "eq",
-                    "rightOperand": "traceability:v1.0"
-                },
-                {
-                    "leftOperand": "cx-policy:ContractReference",
-                    "operator": "eq",
-                    "rightOperand": "<individual contract-id>"
-                },
-                {
-                    "leftOperand": "cx-policy:UsagePurpose",
-                    "operator": "eq",
-                    "rightOperand": "shareWith3rdParty:v1.0"
-                }
-            ]
+            "constraint": {
+                "and": [
+                    {
+                        "leftOperand": "cx-policy:FrameworkAgreement",
+                        "operator": "eq",
+                        "rightOperand": "traceability:v1.0"
+                    },
+                    {
+                        "leftOperand": "cx-policy:ContractReference",
+                        "operator": "eq",
+                        "rightOperand": "<individual contract-id>"
+                    },
+                    {
+                        "leftOperand": "cx-policy:UsagePurpose",
+                        "operator": "eq",
+                        "rightOperand": "shareWith3rdParty:v1.0"
+                    }
+                ]
+            }
         }
     ]
 }

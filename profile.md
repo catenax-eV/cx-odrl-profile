@@ -8,6 +8,8 @@ The machine readable details can be found in the `*.ttl` file. The content below
 
 # LeftOperand
 ## FrameworkAgreement
+### Identifier
+https://w3id.org/catenax/policy/v1.0.0/FrameworkAgreement
 ### Description (not binding)
 The framework the negotiation is based on. Also known as Usecase Framework.
 ### Definition (legally binding)
@@ -17,11 +19,15 @@ Usecase Frameworks are published here:
 https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-data-space-operations
 
 ## ContractReference
+### Identifier
+https://w3id.org/catenax/policy/v1.0.0/ContractReference
 ### Description (not binding)
 A reference to a contract
 ### Definition (legally binding)
 A reference to an existing, individual contract as a basis for the negotiation. This can be a frame contract or a very specific contract.
 ## UsagePurpose
+### Identifier
+https://w3id.org/catenax/policy/v1.0.0/UsagePurpose
 ### Description (not binding)
 The purpose of the contract. For what the data is allowed to be used.
 ### Definition (legally binding)
@@ -29,7 +35,10 @@ Legally binding purpose description.
 
 # RightOperand
 ## FrameworkAgreemenValue
-FrameworkAgreement as a leftOperand allows the following defined values (@value), NOT identifiers (@id).
+### Description (not binding)
+FrameworkAgreement rightOperand values. To be used as literals (@value), NOT identifiers (@id)
+### Definition (legally binding)
+FrameworkAgreement as a leftOperand allows the following defined values.
 By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
 
 - traceability:v1.0
@@ -47,6 +56,9 @@ By definition, this is a standardized append only list that is updated according
 It declares the individual Usecase Framework identified by name and version that is used for the data usage negotiation.
 
 ## UsagePurposeValue
+### Description (not binding)
+
+### Definition (legally binding)
 Legally binding definition of the purpose of this negotiation.
 
 By definition, this is a standardized append only list that is updated according to the standardization process of this profile:

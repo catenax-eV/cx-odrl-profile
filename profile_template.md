@@ -9,6 +9,8 @@ The machine readable details can be found in the `*.ttl` file. The content below
 # LeftOperand
 {{#odrl:LeftOperand}}
 ## {{title}}
+### Identifier
+{{identifier}}
 ### Description (not binding)
 {{label}}
 ### Definition (legally binding)
@@ -18,5 +20,8 @@ The machine readable details can be found in the `*.ttl` file. The content below
 # RightOperand
 {{#odrl:RightOperand}}
 ## {{title}}
+### Description (not binding)
+{{label}}
+### Definition (legally binding)
 {{definition}}
 {{/odrl:RightOperand}}

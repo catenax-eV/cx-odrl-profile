@@ -12,53 +12,57 @@
         ],
         "http://www.w3.org/ns/odrl/2/constraint": [
           {
-            "http://www.w3.org/ns/odrl/2/leftOperand": [
+            "http://www.w3.org/ns/odrl/2/and": [
               {
-                "@id": "https://w3id.org/catenax/policy/v1.0.0/FrameworkAgreement"
-              }
-            ],
-            "http://www.w3.org/ns/odrl/2/operator": [
+                "http://www.w3.org/ns/odrl/2/leftOperand": [
+                  {
+                    "@id": "https://w3id.org/catenax/policy/v1.0.0/FrameworkAgreement"
+                  }
+                ],
+                "http://www.w3.org/ns/odrl/2/operator": [
+                  {
+                    "@id": "http://www.w3.org/ns/odrl/2/eq"
+                  }
+                ],
+                "http://www.w3.org/ns/odrl/2/rightOperand": [
+                  {
+                    "@value": "traceability:v1.0"
+                  }
+                ]
+              },
               {
-                "@id": "http://www.w3.org/ns/odrl/2/eq"
-              }
-            ],
-            "http://www.w3.org/ns/odrl/2/rightOperand": [
+                "http://www.w3.org/ns/odrl/2/leftOperand": [
+                  {
+                    "@id": "https://w3id.org/catenax/policy/v1.0.0/ContractReference"
+                  }
+                ],
+                "http://www.w3.org/ns/odrl/2/operator": [
+                  {
+                    "@id": "http://www.w3.org/ns/odrl/2/eq"
+                  }
+                ],
+                "http://www.w3.org/ns/odrl/2/rightOperand": [
+                  {
+                    "@value": "<individual contract-id>"
+                  }
+                ]
+              },
               {
-                "@value": "traceability:v1.0"
-              }
-            ]
-          },
-          {
-            "http://www.w3.org/ns/odrl/2/leftOperand": [
-              {
-                "@id": "https://w3id.org/catenax/policy/v1.0.0/ContractReference"
-              }
-            ],
-            "http://www.w3.org/ns/odrl/2/operator": [
-              {
-                "@id": "http://www.w3.org/ns/odrl/2/eq"
-              }
-            ],
-            "http://www.w3.org/ns/odrl/2/rightOperand": [
-              {
-                "@value": "<individual contract-id>"
-              }
-            ]
-          },
-          {
-            "http://www.w3.org/ns/odrl/2/leftOperand": [
-              {
-                "@id": "https://w3id.org/catenax/policy/v1.0.0/UsagePurpose"
-              }
-            ],
-            "http://www.w3.org/ns/odrl/2/operator": [
-              {
-                "@id": "http://www.w3.org/ns/odrl/2/eq"
-              }
-            ],
-            "http://www.w3.org/ns/odrl/2/rightOperand": [
-              {
-                "@value": "shareWith3rdParty:v1.0"
+                "http://www.w3.org/ns/odrl/2/leftOperand": [
+                  {
+                    "@id": "https://w3id.org/catenax/policy/v1.0.0/UsagePurpose"
+                  }
+                ],
+                "http://www.w3.org/ns/odrl/2/operator": [
+                  {
+                    "@id": "http://www.w3.org/ns/odrl/2/eq"
+                  }
+                ],
+                "http://www.w3.org/ns/odrl/2/rightOperand": [
+                  {
+                    "@value": "shareWith3rdParty:v1.0"
+                  }
+                ]
               }
             ]
           }
