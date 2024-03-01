@@ -9,7 +9,7 @@ The machine readable details can be found in the `*.ttl` file. The content below
 # LeftOperand
 ## FrameworkAgreement
 ### Identifier
-https://w3id.org/catenax/policy/v1.0.0/FrameworkAgreement
+https://w3id.org/catenax/policy/FrameworkAgreement
 ### Description (not binding)
 The framework the negotiation is based on. Also known as Usecase Framework.
 ### Definition (legally binding)
@@ -18,47 +18,47 @@ Usecase Frameworks are published here:
 
 https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-data-space-operations
 
+FrameworkAgreement as a **leftOperand** allows the following defined **rightOperand values**.
+
+By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
+
+**traceability:v1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Traceability.pdf
+
+**pcf:v1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_PCF.pdf
+
+**quality:v1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Quality.pdf
+
+**circulareconomy:v1.0** :
+
+**behaviortwin:v1.0** :
+
+**sustainability:v1.0** :
+
+It declares the individual Usecase Framework identified by name and version that is used for the data usage negotiation.
+
+
+## Membership
+### Identifier
+https://w3id.org/catenax/policy/Membership
+### Description (not binding)
+Membership in the Dataspace
+### Definition (legally binding)
+TODO
 ## ContractReference
 ### Identifier
-https://w3id.org/catenax/policy/v1.0.0/ContractReference
+https://w3id.org/catenax/policy/ContractReference
 ### Description (not binding)
 A reference to a contract
 ### Definition (legally binding)
 A reference to an existing, individual contract as a basis for the negotiation. This can be a frame contract or a very specific contract.
 ## UsagePurpose
 ### Identifier
-https://w3id.org/catenax/policy/v1.0.0/UsagePurpose
+https://w3id.org/catenax/policy/UsagePurpose
 ### Description (not binding)
 The purpose of the contract. For what the data is allowed to be used.
 ### Definition (legally binding)
 Legally binding purpose description.
 
-# RightOperand
-## FrameworkAgreemenValue
-### Description (not binding)
-FrameworkAgreement rightOperand values. To be used as literals (@value), NOT identifiers (@id)
-### Definition (legally binding)
-FrameworkAgreement as a leftOperand allows the following defined values.
-By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
-
-- traceability:v1.0
-
-- pcf:v1.0
-
-- quality:v1.0
-
-- circulareconomy:v1.0
-
-- behaviortwin:v1.0
-
-- sustainability:v1.0
-
-It declares the individual Usecase Framework identified by name and version that is used for the data usage negotiation.
-
-## UsagePurposeValue
-### Description (not binding)
-
-### Definition (legally binding)
 Legally binding definition of the purpose of this negotiation.
 
 By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
@@ -71,3 +71,6 @@ TODO: list from todays Usecase Frameworks needs to go here!
 
 **term**: definition
 
+
+
+# RightOperand

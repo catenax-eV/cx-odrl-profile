@@ -11,7 +11,7 @@ import chevron
 
 def query_prepare(query_for: str = 'odrl:LeftOperand'):
     query_template = """
-    prefix : <https://w3id.org/catenax/policy/v1.0.0/>
+    prefix : <https://w3id.org/catenax/policy/>
     prefix odrl: <http://www.w3.org/ns/odrl/2/>
     prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
