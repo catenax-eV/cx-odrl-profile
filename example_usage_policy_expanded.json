@@ -16,7 +16,7 @@
               {
                 "http://www.w3.org/ns/odrl/2/leftOperand": [
                   {
-                    "@id": "https://w3id.org/catenax/policy/v1.0.0/FrameworkAgreement"
+                    "@id": "https://w3id.org/catenax/policy/FrameworkAgreement"
                   }
                 ],
                 "http://www.w3.org/ns/odrl/2/operator": [
@@ -26,14 +26,14 @@
                 ],
                 "http://www.w3.org/ns/odrl/2/rightOperand": [
                   {
-                    "@value": "traceability:v1.0"
+                    "@value": "traceability:1.0.0"
                   }
                 ]
               },
               {
                 "http://www.w3.org/ns/odrl/2/leftOperand": [
                   {
-                    "@id": "https://w3id.org/catenax/policy/v1.0.0/ContractReference"
+                    "@id": "https://w3id.org/catenax/policy/ContractReference"
                   }
                 ],
                 "http://www.w3.org/ns/odrl/2/operator": [
@@ -43,14 +43,14 @@
                 ],
                 "http://www.w3.org/ns/odrl/2/rightOperand": [
                   {
-                    "@value": "<individual contract-id>"
+                    "@value": "x12345"
                   }
                 ]
               },
               {
                 "http://www.w3.org/ns/odrl/2/leftOperand": [
                   {
-                    "@id": "https://w3id.org/catenax/policy/v1.0.0/UsagePurpose"
+                    "@id": "https://w3id.org/catenax/policy/UsagePurpose"
                   }
                 ],
                 "http://www.w3.org/ns/odrl/2/operator": [
@@ -60,7 +60,7 @@
                 ],
                 "http://www.w3.org/ns/odrl/2/rightOperand": [
                   {
-                    "@value": "shareWith3rdParty:v1.0"
+                    "@value": "purpose.trace.v1.aspects"
                   }
                 ]
               }
@@ -71,7 +71,7 @@
     ],
     "http://www.w3.org/ns/odrl/2/profile": [
       {
-        "@id": "https://w3id.org/catenax/policy/v1.0.0/profile2405"
+        "@id": "https://w3id.org/catenax/policy/profile2405"
       }
     ]
   }

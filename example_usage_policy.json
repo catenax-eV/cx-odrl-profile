@@ -2,7 +2,7 @@
     "@context": [
         "https://www.w3.org/ns/odrl.jsonld",
         {
-            "cx-policy": "https://w3id.org/catenax/policy/v1.0.0/"
+            "cx-policy": "https://w3id.org/catenax/policy/"
         }
     ],
     "@type": "Policy",
@@ -15,17 +15,17 @@
                     {
                         "leftOperand": "cx-policy:FrameworkAgreement",
                         "operator": "eq",
-                        "rightOperand": "traceability:v1.0"
+                        "rightOperand": "traceability:1.0.0"
                     },
                     {
                         "leftOperand": "cx-policy:ContractReference",
                         "operator": "eq",
-                        "rightOperand": "<individual contract-id>"
+                        "rightOperand": "x12345"
                     },
                     {
                         "leftOperand": "cx-policy:UsagePurpose",
                         "operator": "eq",
-                        "rightOperand": "shareWith3rdParty:v1.0"
+                        "rightOperand": "purpose.trace.v1.aspects"
                     }
                 ]
             }
