@@ -1,10 +1,10 @@
 # Catena-X ODRL Profile
 This is the Catena-X ODRL Profile.
 
-The machine readable details can be found in the `*.ttl` file. The content below is generated out of those files.
+The machine readable details can be found in the `*.ttl` file.
 
 ## Legally binding term definitions
-**The participants are free to use the following term definitions. But whenever they are used, the Participants do accept their below described legal meaning with their Membership in the Catena-X Dataspace and the acceptance of the individual Usecase Frameworks.**
+**The Participants are free to use the following definitions. Whenever the definitions are used, the Participants do accept their defined legal meaning with their Membership in the Catena-X Dataspace and the acceptance of the Usecase Frameworks.**
 
 # LeftOperand
 ## FrameworkAgreement
@@ -12,65 +12,67 @@ The machine readable details can be found in the `*.ttl` file. The content below
 https://w3id.org/catenax/policy/FrameworkAgreement
 ### Description (not binding)
 The framework the negotiation is based on. Also known as Usecase Framework.
-### Definition (legally binding)
-Defines to include the Usecase Framework as legally binding content of the negotiation.
-Usecase Frameworks are published here:
+Please find the legal definitions from the published Usecase Frameworks here:
 
 https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-data-space-operations
 
-FrameworkAgreement as a **leftOperand** allows the following defined **rightOperand values**.
+*FrameworkAgreement* as a leftOperand allows the following **DRAFT VERSION (depends on the release of the legal documents)** *rightOperand* values
 
-By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
+**traceability:1.0.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Traceability.pdf
 
-**traceability:v1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Traceability.pdf
+**pcf:1.0.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_PCF.pdf
 
-**pcf:v1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_PCF.pdf
+**quality:1.0.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Quality.pdf
 
-**quality:v1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Quality.pdf
+**circulareconomy:1.0.0** :
 
-**circulareconomy:v1.0** :
+**behaviortwin:1.0.0** :
 
-**behaviortwin:v1.0** :
+**sustainability:1.0.0** :
 
-**sustainability:v1.0** :
-
-It declares the individual Usecase Framework identified by name and version that is used for the data usage negotiation.
-
-
+### Definition (legally binding)
+NO LEGAL DEFINITION YET.
 ## Membership
 ### Identifier
 https://w3id.org/catenax/policy/Membership
 ### Description (not binding)
 Membership in the Dataspace
 ### Definition (legally binding)
-TODO
+NO LEGAL DEFINITION YET.
 ## ContractReference
 ### Identifier
 https://w3id.org/catenax/policy/ContractReference
 ### Description (not binding)
-A reference to a contract
-### Definition (legally binding)
 A reference to an existing, individual contract as a basis for the negotiation. This can be a frame contract or a very specific contract.
+
+The rightOperand value for this is a free to choose reference under which both parties are able to identify their contract.
+
+### Definition (legally binding)
+NO LEGAL DEFINITION YET.
 ## UsagePurpose
 ### Identifier
 https://w3id.org/catenax/policy/UsagePurpose
 ### Description (not binding)
-The purpose of the contract. For what the data is allowed to be used.
+Legally binding purpose description. Allowed are standardized rightOperand values and free text values.
+
+LEGALLY BINDING MEANING for version 1.x is defined in the corresponding Usecase Framework documents that are referenced via the **FrameworkAgreement**
+
+The following list is NOT complete and a (not legally binding) summary of the relevant parts from the FrameworkAgreements:
+
+**=== Version 1 of the FrameworkAgreements ==**
+
+purpose.trace.v1.TraceBattery
+
+purpose.trace.v1.aspects
+
+purpose.trace.v1.qualityanalysis
+
+ID 3.1 Trace
+
+**== Version 2 of the FrameworkAgreements (planned for 2405) ==**
+
+TODO: fill with all the FrameworkAgreement UsagePurposes
+
+
 ### Definition (legally binding)
-Legally binding purpose description.
-
-Legally binding definition of the purpose of this negotiation.
-
-By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
-
-TODO: list from todays Usecase Frameworks needs to go here!
-
-**qualityNotifications:v1.0**: The data can be used for quality analysis to identify and select affected components and to send quality notifications to affected customers or suppliers.
-
-**legalRequirementForThirdparty:v1.0**: Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules &amp; high-voltage batteries.
-
-**term**: definition
-
-
-
-# RightOperand
+NO LEGAL DEFINITION YET.

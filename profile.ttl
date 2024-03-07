@@ -32,7 +32,7 @@
 	# ODRL Core
 	# https://github.com/w3c/odrl/blob/master/core-profile/odrl-core-profile-22.ttl
 	# reduced by the members in the area that are used in CX 2405,
-	# namely LogiaclConstraint Operands and Constraint Operands
+	# namely LogiaclConstraint Operands and Constraint Operands (commented out below to easier track those)
 	#
     ## Policy
     skos:member odrl:Policy ;
@@ -143,30 +143,26 @@
 :FrameworkAgreement
 	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
 	rdfs:isDefinedBy : ;
-	rdfs:label "The framework the negotiation is based on. Also known as Usecase Framework." ;
-	skos:definition '''Defines to include the Usecase Framework as legally binding content of the negotiation.
-Usecase Frameworks are published here:
+	rdfs:label "FrameworkAgreement";
+    skos:definition "NO LEGAL DEFINITION YET.";
+    skos:note '''The framework the negotiation is based on. Also known as Usecase Framework.
+Please find the legal definitions from the published Usecase Frameworks here:
 
 https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-data-space-operations
 
-FrameworkAgreement as a **leftOperand** allows the following defined **rightOperand values**.
+*FrameworkAgreement* as a leftOperand allows the following **DRAFT VERSION (depends on the release of the legal documents)** *rightOperand* values
 
-By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
+**traceability:1.0.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Traceability.pdf
 
-**traceability:v1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Traceability.pdf
+**pcf:1.0.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_PCF.pdf
 
-**pcf:v1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_PCF.pdf
+**quality:1.0.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Quality.pdf
 
-**quality:v1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Quality.pdf
+**circulareconomy:1.0.0** :
 
-**circulareconomy:v1.0** :
+**behaviortwin:1.0.0** :
 
-**behaviortwin:v1.0** :
-
-**sustainability:v1.0** :
-
-It declares the individual Usecase Framework identified by name and version that is used for the data usage negotiation.
-
+**sustainability:1.0.0** :
 ''' ;
     skos:scopeNote "Catena-X" .
 
@@ -175,8 +171,9 @@ It declares the individual Usecase Framework identified by name and version that
 ##########
 :Membership
 	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
-	rdfs:label "Membership in the Dataspace" ;
-	skos:definition "TODO" ;
+	rdfs:label "Membership" ;
+	skos:definition "NO LEGAL DEFINITION YET.";
+    skos:note "Membership in the Dataspace" ;
     skos:scopeNote "Catena-X" .
 
 
@@ -185,9 +182,12 @@ It declares the individual Usecase Framework identified by name and version that
 ##########
 :ContractReference
 	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
-	rdfs:label "A reference to a contract" ;
-	skos:definition "A reference to an existing, individual contract as a basis for the negotiation. This can be a frame contract or a very specific contract." ;
-	skos:note "The rightOperand value for this is a free to choose reference under which both parties are able to identify their contract." ;
+	rdfs:label "ContractReference" ;
+	skos:definition "NO LEGAL DEFINITION YET.";
+	skos:note '''A reference to an existing, individual contract as a basis for the negotiation. This can be a frame contract or a very specific contract.
+
+The rightOperand value for this is a free to choose reference under which both parties are able to identify their contract.
+''' ;
     skos:scopeNote "Catena-X" .
 
 ##########
@@ -195,23 +195,30 @@ It declares the individual Usecase Framework identified by name and version that
 ##########
 :UsagePurpose
 	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
-	rdfs:label "The purpose of the contract. For what the data is allowed to be used." ;
-	skos:definition '''Legally binding purpose description.
+	rdfs:label "UsagePurpose" ;
+	skos:definition "NO LEGAL DEFINITION YET.";    
+    skos:note '''Legally binding purpose description. Allowed are standardized rightOperand values and free text values.
 
-Legally binding definition of the purpose of this negotiation.
+LEGALLY BINDING MEANING for version 1.x is defined in the corresponding Usecase Framework documents that are referenced via the **FrameworkAgreement**
 
-By definition, this is a standardized append only list that is updated according to the standardization process of this profile:
+The following list is NOT complete and a (not legally binding) summary of the relevant parts from the FrameworkAgreements:
 
-TODO: list from todays Usecase Frameworks needs to go here!
+**=== Version 1 of the FrameworkAgreements ==**
 
-**qualityNotifications:v1.0**: The data can be used for quality analysis to identify and select affected components and to send quality notifications to affected customers or suppliers.
+purpose.trace.v1.TraceBattery
 
-**legalRequirementForThirdparty:v1.0**: Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules & high-voltage batteries.
+purpose.trace.v1.aspects
 
-**term**: definition
+purpose.trace.v1.qualityanalysis
+
+ID 3.1 Trace
+
+**== Version 2 of the FrameworkAgreements (planned for 2405) ==**
+
+TODO: fill with all the FrameworkAgreement UsagePurposes
 
 ''' ;
-	skos:note "Allowed are standardized RightOperands and free text values" ;
+	
     skos:scopeNote "Catena-X" .
 
 ### end Contract Purpose ###
