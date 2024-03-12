@@ -15,7 +15,7 @@
                     {
                         "leftOperand": "cx-policy:FrameworkAgreement",
                         "operator": "eq",
-                        "rightOperand": "traceability:1.0.0"
+                        "rightOperand": "traceability:1.0"
                     },
                     {
                         "leftOperand": "cx-policy:ContractReference",
@@ -25,7 +25,7 @@
                     {
                         "leftOperand": "cx-policy:UsagePurpose",
                         "operator": "eq",
-                        "rightOperand": "purpose.trace.v1.aspects"
+                        "rightOperand": "cx.traceability.aspects:1"
                     }
                 ]
             }
