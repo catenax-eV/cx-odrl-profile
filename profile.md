@@ -10,6 +10,7 @@ The machine readable details can be found in the `*.ttl` file.
 ## FrameworkAgreement
 ### Identifier
 https://w3id.org/catenax/policy/FrameworkAgreement
+
 ### Description (not binding)
 The framework the negotiation is based on. Also known as Usecase Framework.
 Please find the legal definitions from the published Usecase Frameworks here:
@@ -18,40 +19,49 @@ https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-da
 
 *FrameworkAgreement* as a leftOperand allows the following **DRAFT VERSION (depends on the release of the legal documents)** *rightOperand* values
 
-**traceability:1.0.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Traceability.pdf
+**traceability:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Traceability.pdf
 
-**pcf:1.0.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_PCF.pdf
+**pcf:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_PCF.pdf
 
-**quality:1.0.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Quality.pdf
+**quality:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Quality.pdf
 
-**circulareconomy:1.0.0** :
+**circulareconomy:1.0** :
 
-**behaviortwin:1.0.0** :
+**behaviortwin:1.0** :
 
-**sustainability:1.0.0** :
+**sustainability:1.0** :
+
 
 ### Definition (legally binding)
 NO LEGAL DEFINITION YET.
+
 ## Membership
 ### Identifier
 https://w3id.org/catenax/policy/Membership
+
 ### Description (not binding)
 Membership in the Dataspace
+
 ### Definition (legally binding)
 NO LEGAL DEFINITION YET.
+
 ## ContractReference
 ### Identifier
 https://w3id.org/catenax/policy/ContractReference
+
 ### Description (not binding)
 A reference to an existing, individual contract as a basis for the negotiation. This can be a frame contract or a very specific contract.
 
 The rightOperand value for this is a free to choose reference under which both parties are able to identify their contract.
 
+
 ### Definition (legally binding)
 NO LEGAL DEFINITION YET.
+
 ## UsagePurpose
 ### Identifier
 https://w3id.org/catenax/policy/UsagePurpose
+
 ### Description (not binding)
 Legally binding purpose description. Allowed are standardized rightOperand values and free text values.
 
@@ -59,7 +69,7 @@ LEGALLY BINDING MEANING for version 1.x is defined in the corresponding Usecase 
 
 The following list is NOT complete and a (not legally binding) summary of the relevant parts from the FrameworkAgreements:
 
-**=== Version 1 of the FrameworkAgreements ==**
+#### Version 1 of the Traceability FrameworkAgreement (deprecated)
 
 purpose.trace.v1.TraceBattery
 
@@ -69,10 +79,24 @@ purpose.trace.v1.qualityanalysis
 
 ID 3.1 Trace
 
-**== Version 2 of the FrameworkAgreements (planned for 2405) ==**
+#### Version 1(.1) of the FrameworkAgreements released for 2405
 
-TODO: fill with all the FrameworkAgreement UsagePurposes
+cx.traceability.traceBattery:1
+
+cx.traceability.aspects:1
+
+cx.traceability.qualityanalysis:1
+
+#### NOT FINAL YET
+
+(1 Purpose per use case)
+
+#### Version 2 of the FrameworkAgreements (planned for Go-Live Oct 2024) preleminary, list may change!
+
+cx.core.shareWithLegal3rdParty:1
+
 
 
 ### Definition (legally binding)
 NO LEGAL DEFINITION YET.
+

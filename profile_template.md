@@ -11,8 +11,11 @@ The machine readable details can be found in the `*.ttl` file.
 ## {{title}}
 ### Identifier
 {{identifier}}
+
 ### Description (not binding)
 {{note}}
+
 ### Definition (legally binding)
 {{definition}}
+
 {{/odrl:LeftOperand}}
