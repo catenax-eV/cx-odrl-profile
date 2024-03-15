@@ -26,7 +26,7 @@
                 ],
                 "http://www.w3.org/ns/odrl/2/rightOperand": [
                   {
-                    "@value": "traceability:1.0.0"
+                    "@value": "traceability:1.0"
                   }
                 ]
               },
@@ -60,7 +60,7 @@
                 ],
                 "http://www.w3.org/ns/odrl/2/rightOperand": [
                   {
-                    "@value": "purpose.trace.v1.aspects"
+                    "@value": "cx.traceability.aspects:1"
                   }
                 ]
               }
