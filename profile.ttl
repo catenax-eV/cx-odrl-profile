@@ -1,0 +1,257 @@
+@base <https://w3id.org/catenax/policy/> .
+@prefix : <https://w3id.org/catenax/policy/> .
+
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:odrl-catenax-profile:
+	a owl:Ontology ;
+	rdfs:label "Catena-X Profile Ontology Version" ;
+	# version updates will be reflected here with e.g. 2405.1 for minor (append) updates once released
+	owl:versionInfo "2405" ;
+	dct:creator "Matthias Binzer" ;
+    dct:contributor "Catena-X Regulatory Framework Expert Group operating under the Data Space Operations Comitee" ;
+	dct:description "Defines what of ODRL is used and the legally binding term definitions." ;
+	rdfs:comment "Catena-X Profile" ;
+	dct:conformsTo <https://www.w3.org/TR/odrl-model/> .
+	#dct:license <> .
+
+## Catena-X Profile collection
+# non-normative help:
+# https://w3c.github.io/odrl/profile-bp/#outofscope
+#
+:profile2405
+    a skos:Collection ;
+    skos:prefLabel "Catena-X ODRL Profile for Release 24.05 (and future use)" ;
+    skos:scopeNote "This is the supported set of definitions used in Catena-X. If parties agree on addtional parts of the ODRL languge, it is their choice." ;
+	####
+	# ODRL Core
+	# https://github.com/w3c/odrl/blob/master/core-profile/odrl-core-profile-22.ttl
+	# reduced by the members in the area that are used in CX 2405,
+	# namely LogiaclConstraint Operands and Constraint Operands (commented out below to easier track those)
+	#
+    ## Policy
+    skos:member odrl:Policy ;
+    skos:member odrl:uid ;
+    skos:member odrl:profile ;
+    skos:member odrl:inheritFrom ;
+    ## Policy Subclasses
+    skos:member odrl:Agreement ;
+    skos:member odrl:Offer ;
+    skos:member odrl:Set ;
+    ## Rule
+    skos:member odrl:Rule ;
+    skos:member odrl:relation ;
+    skos:member odrl:function ;
+    skos:member odrl:failure ;
+    ## Asset and Relations
+    skos:member odrl:Asset ;
+    skos:member odrl:AssetCollection ;
+    skos:member odrl:target ;
+    skos:member odrl:hasPolicy ;
+    ## Party and Functions
+    skos:member odrl:Party ;
+    skos:member odrl:PartyCollection ;
+    skos:member odrl:assignee ;
+    skos:member odrl:assigner ;
+    skos:member odrl:assigneeOf ;
+    skos:member odrl:assignerOf ;
+    ## Asset and Party
+    skos:member odrl:partOf ;
+    skos:member odrl:source ;
+    ## Permission
+    skos:member odrl:Permission ;
+    skos:member odrl:permission ;
+    ## Prohibition
+    skos:member odrl:Prohibition ;
+    skos:member odrl:prohibition ;
+    ## Action
+    skos:member odrl:Action ;
+    skos:member odrl:action ;
+    skos:member odrl:includedIn ;
+    skos:member odrl:implies ;
+    ## Action for Rules
+    skos:member odrl:use ;
+    skos:member odrl:transfer ;
+    ## Duty
+    skos:member odrl:Duty ;
+    skos:member odrl:obligation ;
+    skos:member odrl:duty ;
+    skos:member odrl:consequence ;
+    skos:member odrl:remedy ;
+    ## Constraint
+    skos:member odrl:Constraint ;
+    skos:member odrl:constraint ;
+    skos:member odrl:refinement ;
+    skos:member odrl:Operator ;
+    skos:member odrl:operator ;
+    skos:member odrl:RightOperand ;
+    skos:member odrl:rightOperand ;
+    skos:member odrl:rightOperandReference ;
+    skos:member odrl:LeftOperand ;
+    skos:member odrl:leftOperand ;
+    skos:member odrl:unit ;
+    skos:member odrl:dataType ;
+    skos:member odrl:status ;
+    ## Logical Constraint
+    skos:member odrl:LogicalConstraint ;
+    skos:member odrl:operand ;
+    ## Constraint Operands
+	# not all are supported in CX 2405
+    skos:member odrl:eq ;
+    # skos:member odrl:gt ;
+    # skos:member odrl:gteq ;
+    # skos:member odrl:lt ;
+    # skos:member odrl:lteq ;
+    # skos:member odrl:neq ;
+    # skos:member odrl:isA ;
+    # skos:member odrl:hasPart ;
+    # skos:member odrl:isPartOf ;
+    # skos:member odrl:isAllOf ;
+    # skos:member odrl:isAnyOf ;
+    # skos:member odrl:isNoneOf ;
+    ## Logical Constraint Operands
+	# not all are allowed in CX 2405
+    # skos:member odrl:or ;
+    # skos:member odrl:xone ;
+    skos:member odrl:and ;
+    # skos:member odrl:andSequence ;
+    ## Policy Conflict Strategy
+    skos:member odrl:ConflictTerm ;
+    skos:member odrl:conflict ;
+    skos:member odrl:perm ;
+    skos:member odrl:prohibit ;
+    skos:member odrl:invalid ;
+	#
+	####
+	# defined here in the Catena-X ODRL Profile
+	####
+	skos:member :FrameworkAgreement ;
+	skos:member :Membership ;
+	skos:member :ContractReference ;
+	skos:member :UsagePurpose .
+
+
+###########
+# Use Case Framework Agreements
+###########
+# leftOperand
+:FrameworkAgreement
+	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "FrameworkAgreement";
+    skos:definition "NO LEGAL DEFINITION YET.";
+    skos:note '''The framework the negotiation is based on. Also known as Usecase Framework.
+Please find the legal definitions from the published Usecase Frameworks here:
+
+https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-data-space-operations
+
+Version numbers depend on the document and are typically 2 digit (e.g. 1.0).
+
+*FrameworkAgreement* as a leftOperand allows the following **DRAFT VERSION (depends on the release of the legal documents)** *rightOperand* values
+
+**traceability:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Traceability.pdf
+
+**pcf:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_PCF.pdf
+
+**quality:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Quality.pdf
+
+**circulareconomy:1.0** :
+
+**behaviortwin:1.0** :
+
+**sustainability:1.0** :
+''' ;
+    skos:scopeNote "Catena-X" .
+
+##########
+# Membership - in case no Framework is used
+##########
+:Membership
+	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
+	rdfs:label "Membership" ;
+	skos:definition "NO LEGAL DEFINITION YET.";
+    skos:note "Membership in the Dataspace" ;
+    skos:scopeNote "Catena-X" .
+
+
+##########
+# Individual *Frame Contract* Agreements that are referenced.
+##########
+:ContractReference
+	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
+	rdfs:label "ContractReference" ;
+	skos:definition "NO LEGAL DEFINITION YET.";
+	skos:note '''A reference to an existing, individual contract as a basis for the negotiation. This can be a frame contract or a very specific contract.
+
+The rightOperand value for this is a free to choose reference under which both parties are able to identify their contract. Typically no version numbers are used.
+
+''' ;
+    skos:scopeNote "Catena-X" .
+
+##########
+# A Contract PURPOSE aka UsagePurpose - what is allowed to be done with the data
+##########
+:UsagePurpose
+	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
+	rdfs:label "UsagePurpose" ;
+	skos:definition "NO LEGAL DEFINITION YET.";    
+    skos:note '''Legally binding purpose description. Allowed are standardized rightOperand values and free text values.
+
+LEGALLY BINDING MEANING for version 1.x is defined in the corresponding Usecase Framework documents that are referenced via the **FrameworkAgreement**
+
+The following list is NOT complete and a (not legally binding) summary of the relevant parts from the FrameworkAgreements:
+
+Version numbers are typically 1 digit.
+
+#### Version 1 of the Traceability FrameworkAgreement (deprecated)
+
+purpose.trace.v1.TraceBattery
+
+purpose.trace.v1.aspects
+
+purpose.trace.v1.qualityanalysis
+
+ID 3.1 Trace
+
+#### Version 1.0 or 1.1 of the FrameworkAgreements released for 2405
+
+cx.traceability.traceBattery:1 - NO LEGAL DEFINITION YET
+
+cx.traceability.aspects:1 - NO LEGAL DEFINITION YET
+
+cx.traceability.qualityanalysis:1 - NO LEGAL DEFINITION YET
+
+#### NOT FINAL YET
+
+(1 Purpose per use case)
+
+#### Version 2 of the FrameworkAgreements (planned for Go-Live Oct 2024) preleminary, list may change!
+
+cx.core.shareWithLegal3rdParty:1 - NO LEGAL DEFINITION YET
+
+''' ;
+	
+    skos:scopeNote "Catena-X" .
+
+### end Contract Purpose ###
+
+
+## taken from upstream: odrl-core-profile-22.ttl
+## Declaration of annotation properties to keep the ontology within OWL DL
+
+	skos:member rdf:type owl:AnnotationProperty .
+	skos:note rdf:type owl:AnnotationProperty .
+	skos:scopeNote rdf:type owl:AnnotationProperty .
+	skos:prefLabel rdf:type owl:AnnotationProperty .
+	dct:license rdf:type owl:AnnotationProperty .
+	dct:contributor rdf:type owl:AnnotationProperty .
+	dct:conformsTo rdf:type owl:AnnotationProperty .
+	dct:creator rdf:type owl:AnnotationProperty .
+	dct:description rdf:type owl:AnnotationProperty .
+	skos:Collection a owl:Class .
+
