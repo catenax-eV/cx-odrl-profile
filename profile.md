@@ -22,17 +22,22 @@ Version numbers depend on the document and are typically 2 digit (e.g. 1.0).
 
 *FrameworkAgreement* as a leftOperand allows the following **DRAFT VERSION (depends on the release of the legal documents)** *rightOperand* values
 
-**traceability:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Traceability.pdf
+**traceability:1.0**
 
-**pcf:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_PCF.pdf
+**pcf:1.0**
 
-**quality:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Quality.pdf
+**quality:1.0**
 
-**circulareconomy:1.0** :
+**circulareconomy:1.0**
 
-**behaviortwin:1.0** :
+**demandcapacity:1.0**
 
-**sustainability:1.0** :
+**puris:1.0**
+
+**businesspartner:1.0**
+
+**behavioraltwin:1.0**
+
 
 
 ### Definition (legally binding)
@@ -75,31 +80,95 @@ The following list is NOT complete and a (not legally binding) summary of the re
 
 Version numbers are typically 1 digit.
 
-#### Version 1 of the Traceability FrameworkAgreement (deprecated)
+#### Version 1.0 of the Traceability FrameworkAgreement (deprecated)
 
-purpose.trace.v1.TraceBattery
+purpose.trace.v1.TraceBattery : **Deprecated.** Use instead: cx.core.legalRequirementForThirdparty:1 **or** cx.core.tractionbattery:1 (**under clarification**)
 
-purpose.trace.v1.aspects
+purpose.trace.v1.aspects : **Deprecated.** Use instead: cx.core.industrycore:1
 
-purpose.trace.v1.qualityanalysis
+purpose.trace.v1.qualityanalysis : **Deprecated.** Use instead: cx.core.qualityNotifications:1
 
-ID 3.1 Trace
+ID 3.1 Trace : **Deprecated.** Not directly replaced. Use a more specific UsagePurpose.
 
-#### Version 1.0 or 1.1 of the FrameworkAgreements released for 2405
+#### Version 1.0 of the FrameworkAgreements released for 2405
 
-cx.traceability.traceBattery:1 - NO LEGAL DEFINITION YET
+cx.core.legalRequirementForThirdparty:1 **or** cx.core.tractionbattery:1
+(**under clarification**)
+&quot;Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules &amp; high-voltage batteries.&quot;
 
-cx.traceability.aspects:1 - NO LEGAL DEFINITION YET
+**cx.core.industrycore:1**
+&quot;Establishing a digital representation of the automotive supply chain to enable a component specific data exchange.&quot;
 
-cx.traceability.qualityanalysis:1 - NO LEGAL DEFINITION YET
+**cx.core.qualityNotifications:1**
+&quot;The data can be used for quality analysis to identify and select affected components and to send quality notifications to affected customers or suppliers.&quot;
 
-#### NOT FINAL YET
+**cx.pcf.base:1**
 
-(1 Purpose per use case)
+**cx.quality.base:1**
 
-#### Version 2 of the FrameworkAgreements (planned for Go-Live Oct 2024) preleminary, list may change!
+**cx.dcm.base:1**
 
-cx.core.shareWithLegal3rdParty:1 - NO LEGAL DEFINITION YET
+**cx.puris.base:1**
+&quot;Optimising processes, conducting plausibility checks and/or collecting information to facilitate sound decision making, each in the context of predictive unit realtime information relating to production and/or logistics.&quot;
+
+**cx.circular.dpp:1**
+&quot;Exchange and use of data according to the applicable public legal regulation directly requiring digital product passports or affecting the contents or handling of digital product passports.&quot;
+
+**cx.circular.smc:1**
+&quot;Exchanging information about secondary material content (SMC) to optimize SMC-usage.&quot;
+
+**cx.circular.marketplace:1**
+&quot;Buy, sell and/or procure  parts and material.&quot;
+
+**cx.circular.materialaccounting:1**
+&quot;Display, process, analysis, correlate, modify and amend data. Use of data for (e.g. enablement of) chain of custody processes and commercial transaction related thereto and allocation of material to parts to the supply chain.&quot;
+
+**cx.bpdm.gate.upload:1**
+&quot;Verifying, curating and enriching data to create a record of basic information about all entities with a BPN in the CX Data Space accessible to all Participants (&quot;Golden Record&quot;) and for early warning services (value-added services, &quot;VASs&quot;).&quot;
+
+**cx.bpdm.gate.download:1**
+&quot;Providing basic information about entities with a BPN in the CX Data Space for Data Consumer to identify counterparty and/or for VASs.&quot;
+
+**cx.bpdm.pool:1**
+&quot;Identifying Participants within the CX Data Space for Data Consumer's internal counterparty identification and information processes and/or for VASs.&quot;
+
+**cx.bpdm.vas.dataquality.upload:1**
+&quot;Screening Data Provider's data (i) to assess Data Provider's data quality and (ii) to create benchmarks for future screenings of other Participants' data by Data Consumer to fulfill the goals of the DQD application.&quot;
+
+**cx.bpdm.vas.dataquality.download:1**
+&quot;Data Consumer assessing quality of own data.&quot;
+
+**cx.bpdm.vas.bdv.upload:1**
+&quot;Screening relevant Data Provider's bank data to verify Data Provider's bank data.&quot;
+
+**cx.bpdm.vas.bdv.download:1**
+&quot;Verifying Data Consumer's submitted bank data.&quot;
+
+**cx.bpdm.vas.fpd.upload:1**
+&quot;Screening Data Provider's business partner data to assess fraud.&quot;
+
+**cx.bpdm.vas.fpd.download:1**
+&quot;Data Consumer assessing fraud risks when transacting with another Participant.&quot;
+
+**cx.bpdm.vas.swd.upload:1**
+&quot;Screening Data Provider's beneficial ownership data to assess trade compliance.&quot;
+
+**cx.bpdm.vas.swd.download:1**
+&quot;Data Consumer assessing trade sanction risks when transacting with another Participant.&quot;
+
+**cx.bpdm.vas.nps.upload:1**
+&quot;Verifying Data Provider's Business Partner Data against natural person data entries.&quot;
+
+**cx.bpdm.vas.nps.download:1**
+&quot;Data Consumer verifying its own Business Partner Data.&quot;
+
+**cx.bpdm.vas.countryrisk:1**
+&quot;Screening Participants’ business data to identify risks when collaborating with a new/existing business partner according to official or company-specific country risk assessments.&quot;
+
+**cx.behaviortwin.base:1**
+
+**cx.core.digitalTwinRegistry:1** : **under clarification**
+
 
 
 
