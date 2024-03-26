@@ -82,29 +82,75 @@ Version numbers are typically 1 digit.
 
 #### Version 1 of the Traceability FrameworkAgreement (deprecated)
 
-purpose.trace.v1.TraceBattery
+purpose.trace.v1.TraceBattery : **deprecated**
 
-purpose.trace.v1.aspects
+purpose.trace.v1.aspects : **deprecated**
 
-purpose.trace.v1.qualityanalysis
+purpose.trace.v1.qualityanalysis : **deprecated**
 
-ID 3.1 Trace
+ID 3.1 Trace : **deprecated**
 
-#### Version 1.0 or 1.1 of the FrameworkAgreements released for 2405
+#### Version 1.0 of the FrameworkAgreements released for 2405
 
-cx.traceability.traceBattery:1 - NO LEGAL DEFINITION YET
+cx.core.legalRequirementForThirdparty:1 **or** cx.core.tractionbattery:1 : **under clarification**
 
-cx.traceability.aspects:1 - NO LEGAL DEFINITION YET
+cx.core.industrycore:1
 
-cx.traceability.qualityanalysis:1 - NO LEGAL DEFINITION YET
+cx.core.qualityNotifications:1
 
-#### NOT FINAL YET
+cx.pcf.base:1
 
-(1 Purpose per use case)
+cx.quality.base:1
+
+cx.dcm.base:1
+
+cx.puris.base:1
+
+cx.circular.dpp:1
+
+cx.circular.smc:1
+
+cx.circular.marketplace:1
+
+cx.circular.qualityNotifications:1 **or** cx.core.qualityNotifications:1 : **under clarification**
+
+cx.circular.materialaccounting:1
+
+cx.bpdm.gate.upload:1
+
+cx.bpdm.gate.download:1
+
+cx.bpdm.pool:1
+
+cx.bpdm.vas.dataquality.upload:1
+
+cx.bpdm.vas.dataquality.download:1
+
+cx.bpdm.vas.bdv.upload:1
+
+cx.bpdm.vas.bdv.download:1
+
+cx.bpdm.vas.fpd.upload:1
+
+cx.bpdm.vas.fpd.download:1
+
+cx.bpdm.vas.swd.upload:1
+
+cx.bpdm.vas.swd.download:1
+
+cx.bpdm.vas.nps.upload:1
+
+cx.bpdm.vas.nps.download:1
+
+cx.bpdm.vas.countryrisk:1
+
+cx.behtwin.base:1
+
+cx.core.digitalTwinRegistry:1 : **under clarification**
+
 
 #### Version 2 of the FrameworkAgreements (planned for Go-Live Oct 2024) preleminary, list may change!
-
-cx.core.shareWithLegal3rdParty:1 - NO LEGAL DEFINITION YET
+Not available yet.
 
 
 
