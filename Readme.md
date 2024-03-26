@@ -1,9 +1,11 @@
 # Introduction
 This repository contains the technical definition of the Catena-X ODRL Profile and in the future, the legal definitions of the terms used in the Catena-X Dataspace during the *Dataspace Protocol Negotiation process* and its resulting agreements.
 
-# Contributions
 Contributions are made to the ODRL profile itself [profile.ttl](./profile.ttl)
 
+The human readable version is generated from the *.ttl file and stored under [profile.md](./profile.md)
+
+# Contributions
 The contribution process to this repository is organized via **Catena-X Automotive Network e.V. -> Data Space Operations Comitee -> Regulatory Framework Expert Group** and via its lead, currently: Hanno Focken
 
 # License
