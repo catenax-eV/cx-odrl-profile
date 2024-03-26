@@ -154,21 +154,21 @@ Version numbers depend on the document and are typically 2 digit (e.g. 1.0).
 
 *FrameworkAgreement* as a leftOperand allows the following **DRAFT VERSION (depends on the release of the legal documents)** *rightOperand* values
 
-**traceability:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Traceability.pdf
+**traceability:1.0**
 
-**pcf:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_PCF.pdf
+**pcf:1.0**
 
-**quality:1.0** : https://catena-x.net/fileadmin/user_upload/04_Einfuehren_und_umsetzen/Governance_Framework/231016_Catena-X_Use_Case_Framework_Quality.pdf
+**quality:1.0**
 
-**circulareconomy:1.0** :
+**circulareconomy:1.0**
 
-**demandcapacity:1.0** :
+**demandcapacity:1.0**
 
-**puris:1.0** :
+**puris:1.0**
 
-**businesspartner:1.0** :
+**businesspartner:1.0**
 
-**behavioraltwin:1.0** :
+**behavioraltwin:1.0**
 
 ''' ;
     skos:scopeNote "Catena-X" .
@@ -245,8 +245,6 @@ cx.circular.smc:1
 
 cx.circular.marketplace:1
 
-cx.circular.qualityNotifications:1 **or** cx.core.qualityNotifications:1 : **under clarification**
-
 cx.circular.materialaccounting:1
 
 cx.bpdm.gate.upload:1
@@ -277,13 +275,10 @@ cx.bpdm.vas.nps.download:1
 
 cx.bpdm.vas.countryrisk:1
 
-cx.behtwin.base:1
+cx.behaviortwin.base:1
 
 cx.core.digitalTwinRegistry:1 : **under clarification**
 
-
-#### Version 2 of the FrameworkAgreements (planned for Go-Live Oct 2024) preleminary, list may change!
-Not available yet.
 
 ''' ;
 	
