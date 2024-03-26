@@ -30,9 +30,14 @@ Version numbers depend on the document and are typically 2 digit (e.g. 1.0).
 
 **circulareconomy:1.0** :
 
-**behaviortwin:1.0** :
+**demandcapacity:1.0** :
 
-**sustainability:1.0** :
+**puris:1.0** :
+
+**businesspartner:1.0** :
+
+**behavioraltwin:1.0** :
+
 
 
 ### Definition (legally binding)
