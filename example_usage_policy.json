@@ -25,7 +25,7 @@
                     {
                         "leftOperand": "cx-policy:UsagePurpose",
                         "operator": "eq",
-                        "rightOperand": "cx.traceability.aspects:1"
+                        "rightOperand": "cx.core.industrycore:1"
                     }
                 ]
             }

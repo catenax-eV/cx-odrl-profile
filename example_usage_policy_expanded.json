@@ -60,7 +60,7 @@
                 ],
                 "http://www.w3.org/ns/odrl/2/rightOperand": [
                   {
-                    "@value": "cx.traceability.aspects:1"
+                    "@value": "cx.core.industrycore:1"
                   }
                 ]
               }
