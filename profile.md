@@ -80,15 +80,15 @@ The following list is NOT complete and a (not legally binding) summary of the re
 
 Version numbers are typically 1 digit.
 
-#### Version 1 of the Traceability FrameworkAgreement (deprecated)
+#### Version 1.0 of the Traceability FrameworkAgreement (deprecated)
 
-purpose.trace.v1.TraceBattery : **deprecated**
+purpose.trace.v1.TraceBattery : **Deprecated.** Use instead: cx.core.legalRequirementForThirdparty:1 **or** cx.core.tractionbattery:1 (**under clarification**)
 
-purpose.trace.v1.aspects : **deprecated**
+purpose.trace.v1.aspects : **Deprecated.** Use instead: cx.core.industrycore:1
 
-purpose.trace.v1.qualityanalysis : **deprecated**
+purpose.trace.v1.qualityanalysis : **Deprecated.** Use instead: cx.core.qualityNotifications:1
 
-ID 3.1 Trace : **deprecated**
+ID 3.1 Trace : **Deprecated.** Not directly replaced. Use a more specific UsagePurpose.
 
 #### Version 1.0 of the FrameworkAgreements released for 2405
 
