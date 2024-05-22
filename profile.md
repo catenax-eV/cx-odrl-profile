@@ -22,21 +22,21 @@ Version numbers depend on the document and are typically 2 digit (e.g. 1.0).
 
 *FrameworkAgreement* as a leftOperand allows the following **DRAFT VERSION (depends on the release of the legal documents)** *rightOperand* values
 
-**traceability:1.0**
+**Traceability:1.0**
 
-**pcf:1.0**
+**Pcf:1.0**
 
-**quality:1.0**
+**Quality:1.0**
 
-**circulareconomy:1.0**
+**CircularEconomy:1.0**
 
-**demandcapacity:1.0**
+**DemandCapacity:1.0**
 
-**puris:1.0**
+**Puris:1.0**
 
-**businesspartner:1.0**
+**BusinessPartner:1.0**
 
-**behavioraltwin:1.0**
+**BehavioralTwin:1.0**
 
 
 
