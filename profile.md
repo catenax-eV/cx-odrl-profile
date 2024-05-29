@@ -164,7 +164,12 @@ As a purpose-specific requirement, the duration of (i) contract, (ii) data provi
 As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year.&quot;
 
 **cx.puris.base:1**
-&quot;Optimising processes, conducting plausibility checks and/or collecting information to facilitate sound decision making, each in the context of predictive unit realtime information relating to production and/or logistics. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year.&quot;
+&quot;Optimizing processes, which includes, without limitation, regular exchange
+of data to prevent and/or solve shortages in the supply chain, conducting
+plausibility checks against other sources and/or collecting information to facilitate sound decision making, all of the above in the context of predictive
+unit real-time information relating to production and/or logistics.
+
+As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year.&quot;
 
 **cx.circular.dpp:1**
 &quot;Exchange and use of data according to the applicable public legal regulation directly requiring digital product passports or affecting the contents or handling of digital product passports. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year.&quot;
