@@ -227,13 +227,13 @@ ID 3.1 Trace : **Deprecated.** Not directly replaced. Use a more specific UsageP
 
 cx.core.legalRequirementForThirdparty:1 **or** cx.core.tractionbattery:1
 (**under clarification**)
-"Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules & high-voltage batteries."
+"Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules & high-voltage batteries. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.core.industrycore:1**
-"Establishing a digital representation of the automotive supply chain to enable a component specific data exchange."
+"Establishing a digital representation of the automotive supply chain to enable a component specific data exchange. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.core.qualityNotifications:1**
-"The data can be used for quality analysis to identify and select affected components and to send quality notifications to affected customers or suppliers."
+"The data can be used for quality analysis to identify and select affected components and to send quality notifications to affected customers or suppliers. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.pcf.base:1**
 
@@ -242,61 +242,61 @@ cx.core.legalRequirementForThirdparty:1 **or** cx.core.tractionbattery:1
 **cx.dcm.base:1**
 
 **cx.puris.base:1**
-"Optimising processes, conducting plausibility checks and/or collecting information to facilitate sound decision making, each in the context of predictive unit realtime information relating to production and/or logistics."
+"Optimising processes, conducting plausibility checks and/or collecting information to facilitate sound decision making, each in the context of predictive unit realtime information relating to production and/or logistics. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.circular.dpp:1**
-"Exchange and use of data according to the applicable public legal regulation directly requiring digital product passports or affecting the contents or handling of digital product passports."
+"Exchange and use of data according to the applicable public legal regulation directly requiring digital product passports or affecting the contents or handling of digital product passports. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.circular.smc:1**
-"Exchanging information about secondary material content (SMC) to optimize SMC-usage."
+"Exchanging information about secondary material content (SMC) to optimize SMC-usage. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.circular.marketplace:1**
-"Buy, sell and/or procure  parts and material."
+"Buy, sell and/or procure  parts and material. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.circular.materialaccounting:1**
-"Display, process, analysis, correlate, modify and amend data. Use of data for (e.g. enablement of) chain of custody processes and commercial transaction related thereto and allocation of material to parts to the supply chain."
+"Display, process, analysis, correlate, modify and amend data. Use of data for (e.g. enablement of) chain of custody processes and commercial transaction related thereto and allocation of material to parts to the supply chain. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.gate.upload:1**
-"Verifying, curating and enriching data to create a record of basic information about all entities with a BPN in the CX Data Space accessible to all Participants ("Golden Record") and for early warning services (value-added services, "VASs")."
+"Verifying, curating and enriching data to create a record of basic information about all entities with a BPN in the CX Data Space accessible to all Participants ("Golden Record") and for early warning services (value-added services, "VASs"). As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.gate.download:1**
-"Providing basic information about entities with a BPN in the CX Data Space for Data Consumer to identify counterparty and/or for VASs."
+"Providing basic information about entities with a BPN in the CX Data Space for Data Consumer to identify counterparty and/or for VASs. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.pool:1**
-"Identifying Participants within the CX Data Space for Data Consumer's internal counterparty identification and information processes and/or for VASs."
+"Identifying Participants within the CX Data Space for Data Consumer's internal counterparty identification and information processes and/or for VASs. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.dataquality.upload:1**
-"Screening Data Provider's data (i) to assess Data Provider's data quality and (ii) to create benchmarks for future screenings of other Participants' data by Data Consumer to fulfill the goals of the DQD application."
+"Screening Data Provider's data (i) to assess Data Provider's data quality and (ii) to create benchmarks for future screenings of other Participants' data by Data Consumer to fulfill the goals of the DQD application. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.dataquality.download:1**
-"Data Consumer assessing quality of own data."
+"Data Consumer assessing quality of own data. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.bdv.upload:1**
-"Screening relevant Data Provider's bank data to verify Data Provider's bank data."
+"Screening relevant Data Provider's bank data to verify Data Provider's bank data. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.bdv.download:1**
-"Verifying Data Consumer's submitted bank data."
+"Verifying Data Consumer's submitted bank data. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.fpd.upload:1**
-"Screening Data Provider's business partner data to assess fraud."
+"Screening Data Provider's business partner data to assess fraud. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.fpd.download:1**
-"Data Consumer assessing fraud risks when transacting with another Participant."
+"Data Consumer assessing fraud risks when transacting with another Participant. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.swd.upload:1**
-"Screening Data Provider's beneficial ownership data to assess trade compliance."
+"Screening Data Provider's beneficial ownership data to assess trade compliance. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.swd.download:1**
-"Data Consumer assessing trade sanction risks when transacting with another Participant."
+"Data Consumer assessing trade sanction risks when transacting with another Participant. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.nps.upload:1**
-"Verifying Data Provider's Business Partner Data against natural person data entries."
+"Verifying Data Provider's Business Partner Data against natural person data entries. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.nps.download:1**
-"Data Consumer verifying its own Business Partner Data."
+"Data Consumer verifying its own Business Partner Data. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.bpdm.vas.countryrisk:1**
-"Screening Participants’ business data to identify risks when collaborating with a new/existing business partner according to official or company-specific country risk assessments."
+"Screening Participants’ business data to identify risks when collaborating with a new/existing business partner according to official or company-specific country risk assessments. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
 **cx.behaviortwin.base:1**
 
