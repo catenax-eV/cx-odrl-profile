@@ -12,7 +12,7 @@
 	a owl:Ontology ;
 	rdfs:label "Catena-X Profile Ontology Version" ;
 	# version updates will be reflected here with e.g. 2405.1 for minor (append) updates once released
-	owl:versionInfo "2405" ;
+	owl:versionInfo "2408" ;
 	dct:creator "Matthias Binzer" ;
     dct:contributor "Catena-X Regulatory Framework Expert Group operating under the Data Space Operations Comitee" ;
 	dct:description "Defines what of ODRL is used and the legally binding term definitions." ;
