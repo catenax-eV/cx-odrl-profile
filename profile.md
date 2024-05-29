@@ -24,19 +24,55 @@ Version numbers depend on the document and are typically 2 digit (e.g. 1.0).
 
 **Traceability:1.0**
 
+Valid from: 2024-06-20
+
+Valid until: 2024-10-16
+
 **Pcf:1.0**
+
+Valid from: 2024-06-20
+
+Valid until: 2024-10-16
 
 **Quality:1.0**
 
+Valid from: 2024-06-20
+
+Valid until: 2024-10-16
+
 **CircularEconomy:1.0**
+
+Valid from: 2024-06-20
+
+Valid until: 2024-10-16
 
 **DemandCapacity:1.0**
 
+Valid from: 2024-06-20
+
+Valid until: 2024-10-16
+
 **Puris:1.0**
+
+Valid from: 2024-06-20
+
+Valid until: 2024-10-16
 
 **BusinessPartner:1.0**
 
+Valid from: 2024-06-20
+
+Valid until: 2024-10-16
+
 **BehavioralTwin:1.0**
+
+Valid from: 2024-06-20
+
+Valid until: 2024-10-16
+
+**DataExchangeGovernance:1.0**
+
+Valid from: 2024-10-17
 
 
 
