@@ -118,7 +118,7 @@ Version numbers are typically 1 digit.
 
 #### Version 1.0 of the Traceability FrameworkAgreement (deprecated)
 
-purpose.trace.v1.TraceBattery : **Deprecated.** Use instead: cx.core.legalRequirementForThirdparty:1 **or** cx.core.tractionbattery:1 (**under clarification**)
+purpose.trace.v1.TraceBattery : **Deprecated.** Use instead: cx.core.legalRequirementForThirdparty:1
 
 purpose.trace.v1.aspects : **Deprecated.** Use instead: cx.core.industrycore:1
 
@@ -128,8 +128,7 @@ ID 3.1 Trace : **Deprecated.** Not directly replaced. Use a more specific UsageP
 
 #### Version 1.0 of the FrameworkAgreements released for 2405
 
-cx.core.legalRequirementForThirdparty:1 **or** cx.core.tractionbattery:1
-(**under clarification**)
+**cx.core.legalRequirementForThirdparty:1**
 &quot;Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules &amp; high-voltage batteries. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year.&quot;
 
 **cx.core.industrycore:1**
