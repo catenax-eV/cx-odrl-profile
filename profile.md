@@ -105,6 +105,14 @@ cx.core.legalRequirementForThirdparty:1 **or** cx.core.tractionbattery:1
 **cx.pcf.base:1**
 
 **cx.quality.base:1**
+&quot;(i) Early identification of anomalies in the use of the product,
+(ii) collaborative root-cause analysis of a problem / error and determining corrective action, 
+(iii) component tracing to optimize technical actions (in combination with use case Traceability),
+(iv) confirming corrective action,
+(v) preventive field observation to detect anomalies, 
+(vi) processing notifications of quality alerts (&quot;&quot;supply chain bottom-up&quot;&quot;) and quality investigations (&quot;&quot;supply chain top-down&quot;&quot;) (possibly in combination with use case &quot;&quot;Traceability&quot;&quot;).
+
+As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year.&quot;
 
 **cx.dcm.base:1**
 &quot;(i) Sending and receiving product-specific demand and capacity data, as well as the associated product functionalities 
