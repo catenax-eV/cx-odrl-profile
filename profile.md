@@ -28,11 +28,15 @@ Valid from: 2024-06-20
 
 Valid until: 2024-10-16
 
+Status: deprecated
+
 **Pcf:1.0**
 
 Valid from: 2024-06-20
 
 Valid until: 2024-10-16
+
+Status: deprecated
 
 **Quality:1.0**
 
@@ -40,11 +44,15 @@ Valid from: 2024-06-20
 
 Valid until: 2024-10-16
 
+Status: deprecated
+
 **CircularEconomy:1.0**
 
 Valid from: 2024-06-20
 
 Valid until: 2024-10-16
+
+Status: deprecated
 
 **DemandCapacity:1.0**
 
@@ -52,11 +60,15 @@ Valid from: 2024-06-20
 
 Valid until: 2024-10-16
 
+Status: deprecated
+
 **Puris:1.0**
 
 Valid from: 2024-06-20
 
 Valid until: 2024-10-16
+
+Status: deprecated
 
 **BusinessPartner:1.0**
 
@@ -64,11 +76,15 @@ Valid from: 2024-06-20
 
 Valid until: 2024-10-16
 
+Status: deprecated
+
 **BehavioralTwin:1.0**
 
 Valid from: 2024-06-20
 
 Valid until: 2024-10-16
+
+Status: deprecated
 
 **DataExchangeGovernance:1.0**
 
