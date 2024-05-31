@@ -240,26 +240,7 @@ The rightOperand value for this is a free to choose reference under which both p
 :UsagePurpose
 	a odrl:LeftOperand, owl:NamedIndividual, skos:Concept ;
 	rdfs:label "UsagePurpose" ;
-	skos:definition "NO LEGAL DEFINITION YET.";    
-    skos:note '''Legally binding purpose description. Allowed are standardized rightOperand values and free text values.
-
-LEGALLY BINDING MEANING for version 1.x is defined in the corresponding Usecase Framework documents that are referenced via the **FrameworkAgreement**
-
-The following list is NOT complete and a (not legally binding) summary of the relevant parts from the FrameworkAgreements:
-
-Version numbers are typically 1 digit.
-
-#### Version 1.0 of the Traceability FrameworkAgreement (deprecated)
-
-purpose.trace.v1.TraceBattery : **Deprecated.** Use instead: cx.core.legalRequirementForThirdparty:1
-
-purpose.trace.v1.aspects : **Deprecated.** Use instead: cx.core.industrycore:1
-
-purpose.trace.v1.qualityanalysis : **Deprecated.** Use instead: cx.core.qualityNotifications:1
-
-ID 3.1 Trace : **Deprecated.** Not directly replaced. Use a more specific UsagePurpose.
-
-#### Version 1.0 of the FrameworkAgreements released for 2405
+	skos:definition '''
 
 **cx.core.legalRequirementForThirdparty:1**
 "Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules & high-voltage batteries. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
@@ -361,6 +342,10 @@ As a purpose-specific requirement, the duration of (i) contract, (ii) data provi
 **cx.core.digitalTwinRegistry:1**
 "Identifying data offers of submodels within the Catena-X ecosystem. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year."
 
+''';
+    skos:note '''Legally binding purpose description. Allowed are standardized rightOperand values and free text values.
+
+Version numbers are typically 1 digit.
 
 ''' ;
 	

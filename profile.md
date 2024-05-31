@@ -110,23 +110,12 @@ https://w3id.org/catenax/policy/UsagePurpose
 ### Description (not binding)
 Legally binding purpose description. Allowed are standardized rightOperand values and free text values.
 
-LEGALLY BINDING MEANING for version 1.x is defined in the corresponding Usecase Framework documents that are referenced via the **FrameworkAgreement**
-
-The following list is NOT complete and a (not legally binding) summary of the relevant parts from the FrameworkAgreements:
-
 Version numbers are typically 1 digit.
 
-#### Version 1.0 of the Traceability FrameworkAgreement (deprecated)
 
-purpose.trace.v1.TraceBattery : **Deprecated.** Use instead: cx.core.legalRequirementForThirdparty:1
 
-purpose.trace.v1.aspects : **Deprecated.** Use instead: cx.core.industrycore:1
+### Definition (legally binding)
 
-purpose.trace.v1.qualityanalysis : **Deprecated.** Use instead: cx.core.qualityNotifications:1
-
-ID 3.1 Trace : **Deprecated.** Not directly replaced. Use a more specific UsagePurpose.
-
-#### Version 1.0 of the FrameworkAgreements released for 2405
 
 **cx.core.legalRequirementForThirdparty:1**
 &quot;Facilitating compliance with mandatory regulatory requirements for tracking and reporting battery cells, modules &amp; high-voltage batteries. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year.&quot;
@@ -229,8 +218,4 @@ As a purpose-specific requirement, the duration of (i) contract, (ii) data provi
 &quot;Identifying data offers of submodels within the Catena-X ecosystem. As a purpose-specific requirement, the duration of (i) contract, (ii) data provision and (iii) usage right(s) as a default are all specified as 1 year.&quot;
 
 
-
-
-### Definition (legally binding)
-NO LEGAL DEFINITION YET.
 
