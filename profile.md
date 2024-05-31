@@ -13,14 +13,12 @@ NO LEGAL DEFINITION YET
 https://w3id.org/catenax/policy/FrameworkAgreement
 
 ### Description (not binding)
-The framework the negotiation is based on. Also known as Usecase Framework.
-Please find the legal definitions from the published Usecase Frameworks here:
+The framework the negotiation is based on. Previously known as Usecase Framework, now, known as Data Exchange Governance:
 
 https://catena-x.net/en/catena-x-introduce-implement/governance-framework-for-data-space-operations
 
 Version numbers depend on the document and are typically 2 digit (e.g. 1.0).
 
-*FrameworkAgreement* as a leftOperand allows the following **DRAFT VERSION (depends on the release of the legal documents)** *rightOperand* values
 
 **Traceability:1.0**
 
