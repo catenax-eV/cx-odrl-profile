@@ -25,7 +25,7 @@ The human readable version is generated from the *.ttl file and stored under [pr
 
 The Open Digital Rights Language (ODRL) is a policy expression language that provides a flexible and interoperable information model, vocabulary, and encoding mechanisms for representing statements about the usage of content and services. The ODRL Information Model describes the underlying concepts, entities, and relationships that form the foundational basis for the semantics of the ODRL policies. Besides Catena-X, ODRL is used by the DSP ([Dataspace Protocol](https://docs.internationaldataspaces.org/dataspace-protocol/)), another core component of the Catena-X architecture
 
-Policies are used to represent permitted and prohibited actions over a certain asset, as well as the obligations required to be meet by stakeholders. In addition, policies may be limited by constraints (e.g., temporal or spatial constraints) and duties (e.g. payments) may be imposed on permissions.
+Policies are used to represent permitted and prohibited actions over a certain asset, as well as the obligations required to be meet by stakeholders. In addition, policies may be limited by constraints (e.g., temporal or spatial constraints) and duties may be imposed on permissions.
 
 *Source and more information on ODRL:* [w3.org](https://www.w3.org/TR/odrl-model/)
 
