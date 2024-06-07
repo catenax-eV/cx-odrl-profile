@@ -15,7 +15,7 @@
                     {
                         "leftOperand": "cx-policy:FrameworkAgreement",
                         "operator": "eq",
-                        "rightOperand": "traceability:1.0"
+                        "rightOperand": "DataExchangeGovernance:1.0"
                     },
                     {
                         "leftOperand": "cx-policy:ContractReference",

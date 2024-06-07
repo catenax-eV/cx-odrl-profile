@@ -26,7 +26,7 @@
                 ],
                 "http://www.w3.org/ns/odrl/2/rightOperand": [
                   {
-                    "@value": "traceability:1.0"
+                    "@value": "DataExchangeGovernance:1.0"
                   }
                 ]
               },
