@@ -5,7 +5,7 @@
             "cx-policy": "https://w3id.org/catenax/policy/"
         }
     ],
-    "@type": "Policy",
+    "@type": "Set",
     "profile": "cx-policy:profile2405",
     "permission": [
         {
