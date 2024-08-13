@@ -1,7 +1,7 @@
 [
   {
     "@type": [
-      "http://www.w3.org/ns/odrl/2/Policy"
+      "http://www.w3.org/ns/odrl/2/Set"
     ],
     "http://www.w3.org/ns/odrl/2/permission": [
       {
