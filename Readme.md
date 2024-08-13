@@ -1,9 +1,9 @@
 
 # Introduction to the Catena-X ODRL Profile and this Repository
 
-This repository represents the official **Catena-X Open Digital Rights Language (ODRL) profile**
+This repository represents the official **Catena-X Open Digital Rights Language (ODRL) profile**.
 
-The primary aim of the **Catena-X ODRL Profile** is to provide standardized contractual modules such as permissions, prohibitions and obligations in a manner such that they can be checked automatically, in a machine-readable format. In short: the ODRL profile enables **automatating contractual negotiations** on the Catena-X Data Space as by default, contract negotiations happen electronically via a registered connector. This repository contains the technical definition of the Catena-X ODRL Profile and the legal definitions of the terms used in the Catena-X Data Space during the *Dataspace Protocol Negotiation process* and its resulting agreements.
+The primary aim of the **Catena-X ODRL Profile** is to provide standardized contractual modules such as permissions, prohibitions and obligations in a manner such that they can be checked automatically, in a machine-readable format. In short: the ODRL profile enables **automating contractual negotiations** on the Catena-X Data Space as by default, contract negotiations happen electronically via a registered connector. This repository contains the technical definition of the Catena-X ODRL Profile and the legal definitions of the terms used in the Catena-X Data Space during the *Dataspace Protocol Negotiation process* and its resulting agreements.
 
 All standardized contractual modules referenced in the Catena-X ODRL profile have a legal description, a technical term to reference them ("leftOperand") and in some cases a defined list of possible or allowed or standardized values ("rightOperand").
 
@@ -13,13 +13,13 @@ Below we list out an example for such a standardized usage policy based on the o
 
 - **Example Catena-X leftOperand** for a standardized Catena-X usage policy: cx-policy:UsagePurpose
 - **Example Catena-X rightOperand** for a standardized Catena-X usage policy: cx.circular.dpp:1
-- **Example legally binding purpose description** of standardized Catena-X RightOperand: "Exchange and use of data according to the applicable public legal regulation directly requiring digital product passports or affecting the contents or handling of digital product passports."
+- **Example legally binding purpose description** of standardized Catena-X rightOperand: "Exchange and use of data according to the applicable public legal regulation directly requiring digital product passports or affecting the contents or handling of digital product passports."
 
-Additional standardized contractual modules will follow in future Catena-X Releases.
+Additional standardized contractual modules, e.g. such as liability, jurisdiction etc. will follow in future Catena-X Releases.
 
-Contributions are made to the ODRL profile itself [profile.ttl](./profile.ttl)
+Contributions are made to the ODRL profile itself [profile.ttl](./profile.ttl).
 
-The human readable version is generated from the *.ttl file and stored under [profile.md](./profile.md)
+The human readable version is generated from the *.ttl file and stored under [profile.md](./profile.md).
 
 # Context on the Open Digital Rights Language (ODRL)
 
@@ -31,7 +31,7 @@ Policies are used to represent permitted and prohibited actions over a certain a
 
 # Contributions
 
-The **Catena-X Automotive Network e.V.'s** Data Space Operations Commitee and its Regulatory Expert Group organizes the contribution process to this repository in accordance with the Catena-X Operating Model and its process for standardizing non-technical requirements.
+The **Catena-X Automotive Network e.V.'s** Data Space Operations Commitee and its Regulatory Expert Group organizes the contribution process to this repository in accordance with the Catena-X [Operating Model](https://catenax-ev.github.io/docs/next/operating-model/why-introduction) and its process for standardizing non-technical requirements.
 
 # License
 
