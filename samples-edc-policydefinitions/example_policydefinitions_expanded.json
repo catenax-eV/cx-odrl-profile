@@ -1,0 +1,86 @@
+[
+  {
+    "@id": "change-me",
+    "@type": [
+      "https://w3id.org/edc/v0.0.1/ns/PolicyDefinition"
+    ],
+    "https://w3id.org/edc/v0.0.1/ns/policy": [
+      {
+        "@type": [
+          "http://www.w3.org/ns/odrl/2/Set"
+        ],
+        "http://www.w3.org/ns/odrl/2/permission": [
+          {
+            "http://www.w3.org/ns/odrl/2/action": [
+              {
+                "@id": "http://www.w3.org/ns/odrl/2/use"
+              }
+            ],
+            "http://www.w3.org/ns/odrl/2/constraint": [
+              {
+                "http://www.w3.org/ns/odrl/2/and": [
+                  {
+                    "http://www.w3.org/ns/odrl/2/leftOperand": [
+                      {
+                        "@id": "https://w3id.org/catenax/policy/FrameworkAgreement"
+                      }
+                    ],
+                    "http://www.w3.org/ns/odrl/2/operator": [
+                      {
+                        "@id": "http://www.w3.org/ns/odrl/2/eq"
+                      }
+                    ],
+                    "http://www.w3.org/ns/odrl/2/rightOperand": [
+                      {
+                        "@value": "DataExchangeGovernance:1.0"
+                      }
+                    ]
+                  },
+                  {
+                    "http://www.w3.org/ns/odrl/2/leftOperand": [
+                      {
+                        "@id": "https://w3id.org/catenax/policy/ContractReference"
+                      }
+                    ],
+                    "http://www.w3.org/ns/odrl/2/operator": [
+                      {
+                        "@id": "http://www.w3.org/ns/odrl/2/eq"
+                      }
+                    ],
+                    "http://www.w3.org/ns/odrl/2/rightOperand": [
+                      {
+                        "@value": "x12345"
+                      }
+                    ]
+                  },
+                  {
+                    "http://www.w3.org/ns/odrl/2/leftOperand": [
+                      {
+                        "@id": "https://w3id.org/catenax/policy/UsagePurpose"
+                      }
+                    ],
+                    "http://www.w3.org/ns/odrl/2/operator": [
+                      {
+                        "@id": "http://www.w3.org/ns/odrl/2/eq"
+                      }
+                    ],
+                    "http://www.w3.org/ns/odrl/2/rightOperand": [
+                      {
+                        "@value": "cx.core.industrycore:1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "http://www.w3.org/ns/odrl/2/profile": [
+          {
+            "@id": "https://w3id.org/catenax/policy/profile2405"
+          }
+        ]
+      }
+    ]
+  }
+]

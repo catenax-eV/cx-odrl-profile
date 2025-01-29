@@ -1,0 +1,45 @@
+{
+  "@context": [
+    "https://w3id.org/tractusx/policy/v1.0.0",
+    "http://www.w3.org/ns/odrl.jsonld",
+    {
+      "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+    }
+  ],
+  "@type": "PolicyDefinition",
+  "@id": "change-me",
+  "policy": {
+    "@context": [
+      "http://www.w3.org/ns/odrl.jsonld",
+      {
+        "cx-policy": "https://w3id.org/catenax/policy/"
+      }
+    ],
+    "@type": "Set",
+    "profile": "cx-policy:profile2405",
+    "permission": [
+      {
+        "action": "use",
+        "constraint": {
+          "and": [
+            {
+              "leftOperand": "cx-policy:FrameworkAgreement",
+              "operator": "eq",
+              "rightOperand": "DataExchangeGovernance:1.0"
+            },
+            {
+              "leftOperand": "cx-policy:ContractReference",
+              "operator": "eq",
+              "rightOperand": "x12345"
+            },
+            {
+              "leftOperand": "cx-policy:UsagePurpose",
+              "operator": "eq",
+              "rightOperand": "cx.core.industrycore:1"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
