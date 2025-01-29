@@ -17,9 +17,9 @@ Below we list out an example for such a standardized usage policy based on the o
 
 Additional standardized contractual modules, e.g. such as liability, jurisdiction etc. will follow in future Catena-X Releases.
 
-Contributions are made to the ODRL profile itself [profile.ttl](./profile.ttl).
+Contributions are made to the ODRL profile itself [profile.ttl](artifacts/profile.ttl).
 
-The human readable version is generated from the *.ttl file and stored under [profile.md](./profile.md).
+The human readable version is generated from the *.ttl file and stored under [profile.md](artifacts/profile.md).
 
 # Context on the Open Digital Rights Language (ODRL)
 
@@ -41,7 +41,9 @@ Additionally, a small part of this repository is source code to generate the hum
 
 # Examples
 
-An example can be found in [example_usage_policy.json](./example_usage_policy.json) and its jsonld expanded version [example_usage_policy_expanded.json](./example_usage_policy_expanded.json)
+## DSP (Dataspace Protocol)
+Examples of the implementation agnostic Policy objects can be found in [example_usage_policy.json](samples-dsp/example_usage_policy.json) and its jsonld expanded version [example_usage_policy_expanded.json](samples-dsp/example_usage_policy_expanded.json).
+They adhere to the DSP's schema definition but may not be accepted by all implementations at configuration time.
 
 # Testing
 
