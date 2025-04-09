@@ -1,0 +1,311 @@
+@base <https://w3id.org/catenax/policy/> .
+@prefix cx:     <https://w3id.org/catenax/policy/> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix odrl:   <http://www.w3.org/ns/odrl/2/> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+
+
+cx:
+    a        owl:Ontology ;
+    dct:contributor "Data Space Operations Committee" ;
+    dct:creator     "Catena-X Regulatory Framework Expert Group" ;
+    dct:description "This is the Catena-X ODRL Profile for Version 2405." ;
+    dct:license     <> ;
+    dct:title       "Catena-X ODRL Profile" ;
+    owl:versionInfo "2506" .
+
+## SKOS Collection
+cx:profile-2506
+    a              skos:Collection ;
+    skos:prefLabel "Catena-X ODRL Profile for Release 25.06 (and future use)" ;
+    skos:scopeNote "This is the supported set of definitions used in Catena-X. If parties agree on additional parts of the ODRL language, it is their choice." ;
+    ####
+    # ODRL Core
+    # https://github.com/w3c/odrl/blob/master/core-profile/odrl-core-profile-22.ttl
+    # reduced by the members in the area that are used in CX 2405,
+    # namely LogicalConstraint Operands and Constraint Operands (commented out below to easier track those)
+    #
+    ## Policy
+    skos:member    odrl:Policy ;
+    skos:member    odrl:uid ;
+    skos:member    odrl:profile ;
+    skos:member    odrl:inheritFrom ;
+    ## Policy Subclasses
+    skos:member    odrl:Agreement ;
+    skos:member    odrl:Offer ;
+    skos:member    odrl:Set ;
+    ## Rule
+    skos:member    odrl:Rule ;
+    skos:member    odrl:relation ;
+    skos:member    odrl:function ;
+    skos:member    odrl:failure ;
+    ## Asset and Relations
+    skos:member    odrl:Asset ;
+    skos:member    odrl:AssetCollection ;
+    skos:member    odrl:target ;
+    skos:member    odrl:hasPolicy ;
+    ## Party and Functions
+    skos:member    odrl:Party ;
+    skos:member    odrl:PartyCollection ;
+    skos:member    odrl:assignee ;
+    skos:member    odrl:assigner ;
+    skos:member    odrl:assigneeOf ;
+    skos:member    odrl:assignerOf ;
+    ## Asset and Party
+    skos:member    odrl:partOf ;
+    skos:member    odrl:source ;
+    ## Permission
+    skos:member    odrl:Permission ;
+    skos:member    odrl:permission ;
+    ## Prohibition
+    skos:member    odrl:Prohibition ;
+    skos:member    odrl:prohibition ;
+    ## Action
+    skos:member    odrl:Action ;
+    skos:member    odrl:action ;
+    skos:member    odrl:includedIn ;
+    skos:member    odrl:implies ;
+    ## Action for Rules
+    skos:member    odrl:use ;
+    skos:member    odrl:transfer ;
+    ## Duty
+    skos:member    odrl:Duty ;
+    skos:member    odrl:obligation ;
+    skos:member    odrl:duty ;
+    skos:member    odrl:consequence ;
+    skos:member    odrl:remedy ;
+    ## Constraint
+    skos:member    odrl:Constraint ;
+    skos:member    odrl:constraint ;
+    skos:member    odrl:refinement ;
+    skos:member    odrl:Operator ;
+    skos:member    odrl:operator ;
+    skos:member    odrl:RightOperand ;
+    skos:member    odrl:rightOperand ;
+    skos:member    odrl:rightOperandReference ;
+    skos:member    odrl:LeftOperand ;
+    skos:member    odrl:leftOperand ;
+    skos:member    odrl:unit ;
+    skos:member    odrl:dataType ;
+    skos:member    odrl:status ;
+    ## Logical Constraint
+    skos:member    odrl:LogicalConstraint ;
+    skos:member    odrl:operand ;
+    ## Constraint Operands
+    # not all are supported in CX 2506
+    skos:member    odrl:eq ;
+    skos:member    odrl:isAnyOf ;
+    skos:member    odrl:isNoneOf ;
+    ## Logical Constraint Operands
+    # not all are allowed in CX 2506
+    skos:member    odrl:and ;
+    skos:member    odrl:ConflictTerm ;
+    skos:member    odrl:conflict ;
+    skos:member    odrl:perm ;
+    skos:member    odrl:prohibit ;
+    skos:member    odrl:invalid ;
+    #
+    ####
+    # Catena-X ODRL Profile Vocabulary Terms
+    ####
+    # Constraint Left Operands
+    skos:member    cx:FrameworkAgreement ;
+    skos:member    cx:Membership ;
+    skos:member    cx:ContractReference ;
+    skos:member    cx:UsagePurpose ;
+    skos:member    cx:BusinessPartnerNumber ;
+    skos:member    cx:BusinessPartnerGroup ;
+    # Actions for Policy
+    skos:member    cx:access ;
+    skos:member    cx:usage ;
+    # Constraint Right Operands
+    skos:member    cx:DataExchangeGovernance:1.0 .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+## Constraint Left Operands
+
+###  BusinessPartnerGroup
+cx:BusinessPartnerGroup
+    rdf:type         owl:NamedIndividual, skos:Concept, odrl:LeftOperand ;
+    rdfs:isDefinedBy cx: ;
+    rdfs:label       "BusinessPartnerGroup" ;
+    skos:definition  "NO LEGAL DEFINITION YET." ;
+    skos:note        "Allowed operator(s): odrl:isAnyOf, odrl:isNoneOf ." ;
+    skos:scopeNote   "Catena-X" .
+
+
+###  BusinessPartnerNumber
+cx:BusinessPartnerNumber
+    rdf:type         owl:NamedIndividual, skos:Concept, odrl:LeftOperand ;
+    dct:description  "BPN, the unique identifier that is assigned to each business partner." ;
+    rdfs:isDefinedBy cx: ;
+    rdfs:label       "BusinessPartnerNumber" ;
+    skos:definition  "NO LEGAL DEFINITION YET." ;
+    skos:note        "Allowed operator(s): odrl:eq ." ;
+    skos:scopeNote   "Catena-X" .
+
+
+###  ContractReference
+cx:ContractReference
+    rdf:type         owl:NamedIndividual, skos:Concept, odrl:LeftOperand ;
+    dct:description  "References contracts that are not governed by the Catena-X association." ;
+    dct:identifier   "" ;
+    rdfs:isDefinedBy cx: ;
+    rdfs:label       "ContractReference" ;
+    skos:definition  "NO LEGAL DEFINITION YET." ;
+    skos:note        "Allowed operator(s): odrl:eq ." ;
+    skos:scopeNote   "Catena-X" .
+
+
+###  FrameworkAgreement
+cx:FrameworkAgreement
+    rdf:type         owl:NamedIndividual, skos:Concept, odrl:LeftOperand ;
+    dct:description  "References the legally binding Data Exchange Governance document set up by the Catena-X association." ;
+    dct:identifier   "https://w3id.org/catenax/policy/FrameworkAgreement" ;
+    rdfs:isDefinedBy cx: ;
+    rdfs:label       "FrameworkAgreement" ;
+    skos:definition  "NO LEGAL DEFINITION YET." ;
+    skos:note        """Allowed operator(s): odrl:eq ;
+Allowed right operand literals(s): \"DataExchangeGovernance:1.0\"""" ;
+    skos:scopeNote   "Catena-X" .
+
+
+###  Membership
+cx:Membership
+    rdf:type         owl:NamedIndividual, skos:Concept, odrl:LeftOperand ;
+    dct:description  "Status of membership in the Dataspace." ;
+    dct:identifier   "https://w3id.org/catenax/policy/Membership" ;
+    rdfs:isDefinedBy cx: ;
+    rdfs:label       "Membership" ;
+    skos:definition  "NO LEGAL DEFINITION YET." ;
+    skos:note        """Allowed operator(s): odrl:eq ;
+
+Allowed right operand literals(s): \"active\"""" ;
+    skos:scopeNote   "Catena-X" .
+
+
+###  UsagePurpose
+cx::UsagePurpose
+    rdf:type         owl:NamedIndividual, skos:Concept, odrl:LeftOperand ;
+    dct:description  "Restricts the purpose the Consumer is privileged to use the obtained data for" ;
+    dct:identifier   "" ;
+    rdfs:isDefinedBy cx: ;
+    rdfs:label       "UsagePurpose" ;
+    skos:definition  "NO LEGAL DEFINITION YET." ;
+    skos:note        "Allowed operator(s): odrl:eq ." ;
+    skos:scopeNote   "Catena-X" .
+
+
+## Constraint Right Operands
+
+###  DataExchangeGovernance:1.0
+cx:DataExchangeGovernance:1.0
+    rdf:type         owl:NamedIndividual, skos:Concept, odrl:RightOperand ;
+    dct:description  "The Data Exchange Governance document set up by the Catena-X association. It governs the \"who, with whom, what, where from and where to, why, how, and when\" of Data Sharing in Catena-X. It is roughly structured along the lines of business scenarios under which a set of business partners want to exchange data." ;
+    dct:identifier   "https://w3id.org/catenax/policy/DataExchangeGovernance:1.0" ;
+    schema:status    "published" ;
+    schema:validFrom "2024-10-17"^^xsd:date ;
+    rdfs:isDefinedBy cx: ;
+    rdfs:label       "DataExchangeGovernance:1.0" ;
+    skos:definition  "NO LEGAL DEFINITION YET." ;
+    skos:note        "Allowed left operand(s): cx:FrameworkAgreement ." ;
+    skos:scopeNote   "Catena-X" .
+
+## Actions for Policy
+
+###  access
+cx:access
+    rdf:type         owl:NamedIndividual, skos:Concept, odrl:Action ;
+    dct:identifier   "https://w3id.org/catenax/policy/access" ;
+    rdfs:isDefinedBy cx: ;
+    rdfs:label       "Access" ;
+    skos:definition  "An access policy-level action." ;
+    skos:note        "This action MUST only be used with an Access policy and directly on that policy (not inside Rules)." ;
+    skos:scopeNote   "Catena-X" ;
+    odrl:includedIn  odrl:use .
+
+
+###  usage
+cx:usage
+    rdf:type         owl:NamedIndividual, skos:Concept, odrl:Action ;
+    dct:identifier   "https://w3id.org/catenax/policy/usage" ;
+    rdfs:isDefinedBy cx: ;
+    rdfs:label       "Usage" ;
+    skos:definition  "A usage policy-level action." ;
+    skos:note        "This action MUST only be used with an Usage policy and directly on that policy (not inside Rules)." ;
+    skos:scopeNote   "Catena-X" ;
+    odrl:includedIn  odrl:use .
+
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+dct:contributor
+    rdf:type owl:AnnotationProperty .
+
+dct:creator
+    rdf:type owl:AnnotationProperty .
+
+dct:description
+    rdf:type owl:AnnotationProperty .
+
+dct:identifier
+    rdf:type owl:AnnotationProperty .
+
+dct:license
+    rdf:type owl:AnnotationProperty .
+
+dct:title
+    rdf:type owl:AnnotationProperty .
+
+schema:status
+    rdf:type owl:AnnotationProperty .
+
+schema:validFrom
+    rdf:type owl:AnnotationProperty .
+
+skos:definition
+    rdf:type owl:AnnotationProperty .
+
+skos:member
+    rdf:type owl:AnnotationProperty .
+
+skos:note
+    rdf:type owl:AnnotationProperty .
+
+skos:prefLabel
+    rdf:type owl:AnnotationProperty .
+
+skos:scopeNote
+    rdf:type owl:AnnotationProperty .
+
+odrl:includedIn
+    rdf:type owl:AnnotationProperty .
+
+xsd:date
+    rdf:type rdfs:Datatype .
+
+skos:Collection
+    rdf:type owl:Class .
+
+skos:Concept
+    rdf:type owl:Class .
+
+odrl:Action
+    rdf:type owl:Class .
+
+odrl:LeftOperand
+    rdf:type owl:Class .
+
+odrl:RightOperand
+    rdf:type owl:Class .
