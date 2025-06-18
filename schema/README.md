@@ -4,4 +4,4 @@ Catena-X has for multiple years defined certain policies as well-known in the Da
 
 The `Constraint` object is an essential extension point for the Dataspace Protocol. It is embedded in a variety of DSP-messages that are foundational for the legally-binding contract negotiation between business partners in a Dataspace. This folder contains the relevant JSON schemas, a JSON-LD context and examples for the commonplace policies.
 
-CX-015x Policy Constraints For Data Exchange describes how the constraints should be used in Access Policies and Usage Policies and refers to this folder and the contained files.
+CX-015x Policy Constraints For Data Exchange describes how the constraints should be used in Access Policies and Usage Policies and intermediately refers to this folder and the contained files as long as the CX-015x standard is not yet published.
