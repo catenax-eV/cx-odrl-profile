@@ -1,0 +1,5 @@
+{
+    "leftOperand": "ParticipationEnd",
+    "operator": "eq",
+    "rightOperand": "cx.dataProvisioning.dataTrustee"
+}

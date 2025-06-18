@@ -1,0 +1,5 @@
+{
+  "leftOperand": "ManagedLegalEntityRegion",
+  "operator": "eq",
+  "rightOperand": "cx.region.all:1"
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "ParticipationEndConstraintSchema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "#/definitions/ParticipationEndConstraint"
+    }
+  ],
+  "$id": "https://w3id.org/catenax/2025/9/policy/participant-end-constraint-schema.json",
+  "definitions": {
+    "ParticipationEndConstraint": {
+      "type": "object",
+      "properties": {
+        "leftOperand": {
+          "type": "string",
+          "const": "ParticipationEnd"
+        },
+        "operator": {
+          "type": "string",
+          "const": "eq"
+        },
+        "rightOperand": {
+          "$ref": "#/definitions/DataProvisioningDataTrusteeRightOperand"
+        }
+      },
+      "additionalProperties": false
+    },
+    "DataProvisioningDataTrusteeRightOperand": {
+      "type": "string",
+      "const": "cx.dataProvisioning.dataTrustee",
+      "$comment": "{\"permission\":\"In the event that the Data Provider terminates its registration for participation in the Catena-X Data Space, the Data Provider is required to transfer the relevant Data to a data trustee, who, using its own RC, shall ensure the availability of the Data for the required period.\"}"
+    }
+  }
+}

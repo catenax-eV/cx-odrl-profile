@@ -1,0 +1,8 @@
+{
+  "leftOperand": "AffiliatesRegion",
+  "operator": "eq",
+  "rightOperand": [
+    "cx.region.southAmerica:1",
+    "cx.region.africa:1"
+  ]
+}

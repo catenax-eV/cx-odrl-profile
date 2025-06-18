@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "FrameworkAgreementConstraintSchema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "#/definitions/FrameworkAgreementConstraint"
+    }
+  ],
+  "$id": "https://w3id.org/catenax/2025/9/policy/framework-agreement-constraint-schema.json",
+  "definitions": {
+    "FrameworkAgreementConstraint": {
+      "type": "object",
+      "properties": {
+        "leftOperand": {
+          "type": "string",
+          "const": "FrameworkAgreement"
+        },
+        "operator": {
+          "type": "string",
+          "const": "eq"
+        },
+        "rightOperand": {
+          "$ref": "#/definitions/DataExchangeGovernanceRightOperand"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "rightOperand",
+        "operator",
+        "leftOperand"
+      ]
+    },
+    "DataExchangeGovernanceRightOperand": {
+      "type": "string",
+      "const": "DataExchangeGovernance:1.0",
+      "$comment": "{\"permission\":\"The Data Provider and Data Consumer agree to the Data Exchange Governance published by the Catena-X Automotive Network e.V. (Association) as basis for this Agreement concluded via the RC.\"}"
+    }
+  }
+}
