@@ -73,7 +73,7 @@
           "$ref": "https://w3id.org/catenax/2025/9/policy/affiliates-region-constraint-schema.json"
         },
         {
-          "$ref": "https://w3id.org/catenax/2025/9/policy/region-bpnl-constraint-schema.json"
+          "$ref": "https://w3id.org/catenax/2025/9/policy/affiliates-bpnl-constraint-schema.json"
         },
         {
           "$ref": "https://w3id.org/catenax/2025/9/policy/managed-legal-entity-region-constraint-schema.json"
@@ -166,7 +166,7 @@
               "$ref": "https://w3id.org/catenax/2025/9/policy/affiliates-region-constraint-schema.json"
             },
             {
-              "$ref": "https://w3id.org/catenax/2025/9/policy/region-bpnl-constraint-schema.json"
+              "$ref": "https://w3id.org/catenax/2025/9/policy/affiliates-bpnl-constraint-schema.json"
             },
             {
               "$ref": "https://w3id.org/catenax/2025/9/policy/usage-restriction-constraint-schema.json"

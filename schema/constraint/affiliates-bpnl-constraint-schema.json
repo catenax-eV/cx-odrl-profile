@@ -1,15 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "title": "RegionBpnlConstraintSchema",
+  "title": "AffiliatesBpnlConstraint",
   "type": "object",
   "allOf": [
     {
-      "$ref": "#/definitions/RegionBpnlConstraint"
+      "$ref": "#/definitions/AffiliatesBpnlConstraint"
     }
   ],
-  "$id": "https://w3id.org/catenax/2025/9/policy/region-bpnl-constraint-schema.json",
+  "$id": "https://w3id.org/catenax/2025/9/policy/affiliates-bpnl-constraint-schema.json",
   "definitions": {
-    "RegionBpnlConstraint": {
+    "AffiliatesBpnlConstraint": {
       "type": "object",
       "properties": {
         "leftOperand": {

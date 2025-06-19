@@ -34,7 +34,7 @@
     "DataExchangeGovernanceRightOperand": {
       "type": "string",
       "const": "DataExchangeGovernance:1.0",
-      "$comment": "{\"permission\":\"The Data Provider and Data Consumer agree to the Data Exchange Governance published by the Catena-X Automotive Network e.V. (Association) as basis for this Agreement concluded via the RC.\"}"
+      "$comment": "{\"permission\":\"Data Provider and Data Consumer agree to the Data Exchange Governance published by the Catena-X Automotive Network e.V. (Association) as basis for this Agreement concluded via the RC.\"}"
     }
   }
 }

@@ -33,7 +33,7 @@
     },
     "ContractReferenceRightOperand": {
       "type": "string",
-      "$comment": "{\"permission\":\"The Parties are free to reference an existing, individual contract as a basis of the Agreement concluded via the RC. This can be a frame contract or a very specific contract. The rightOperand value for this contract constraint can be a free to choose reference  under which both parties are able to identify their contract. The reference does not have to have a version number.\"}"
+      "$comment": "{\"permission\":\"Data Provider and Data Consumer are free to reference an existing, individual contract as a basis of the Agreement concluded via the RC. This can be a frame contract or a very specific contract. The rightOperand value for this contract constraint can be a free to choose reference  under which both parties are able to identify their contract. The reference does not have to have a version number.\"}"
     }
   }
 }
