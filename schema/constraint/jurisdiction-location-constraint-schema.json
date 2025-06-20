@@ -28,7 +28,7 @@
     },
     "LocationStringRightOperand": {
       "type": "string",
-      "$comment": "{\"permission\":\"The exclusive venue for all disputes arising from the Agreement concluded via the RC shall be at the competent court at the location specified herein.\"}"
+      "$comment": "{\"permission\":\"The exclusive venue for all disputes arising from the Agreement concluded via the Registered Connector (RC) shall be at the competent court at the location specified herein.\"}"
     }
   }
 }

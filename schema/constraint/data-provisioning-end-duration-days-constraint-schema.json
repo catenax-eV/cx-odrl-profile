@@ -28,7 +28,7 @@
     },
     "DataProvisioningEndDurationDaysRightOperand": {
       "type": "integer",
-      "$comment": "{\"obligation\":\"The Data Provider shall make the Data available for the period specified herein in days, commencing from the second the Agreement is concluded via the RC.\"}"
+      "$comment": "{\"obligation\":\"The Data Provider shall make the Data available for the period specified herein in days, commencing from the second the Agreement is concluded via the Registered Connector (RC).\"}"
     }
   }
 }

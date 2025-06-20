@@ -71,9 +71,6 @@
     "Membership": {
       "@id": "cx-policy:Membership"
     },
-    "ParticipationEnd": {
-      "@id": "cx-policy:ParticipationEnd"
-    },
     "Precedence": {
       "@id": "cx-policy:Precedence"
     },

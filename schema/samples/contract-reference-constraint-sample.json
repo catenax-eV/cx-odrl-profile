@@ -2,6 +2,6 @@
     "leftOperand": "ContractReference",
     "operator": "eq",
     "rightOperand": [
-        "somethingsomething"
+        "ContractID250620197"
     ]
 }

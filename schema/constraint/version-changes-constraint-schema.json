@@ -32,12 +32,12 @@
     "VersionChangesMinorRightOperand": {
       "type": "string",
       "const": "cx.versionChanges.minor:1",
-      "$comment": "{\"permission\":\"The Agreement concluded via the RC covers only the exchange of Data effected on the basis of the major API version (as specified in the dataset attribute base-URL), the major Asset-Version (dataset attribute cx-common:version), and/or the major Aspect Model Version as applicable at the time of concluding the Agreement. The Agreement concluded via the RC must be renegotiated in the event of any change to at least one of these major versions. The Agreement does not need to be renegotiated in the event of any change to one of these minor versions. The definitions of major and minor version is based on Semantic Versioning (https://semver.org/).\"}"
+      "$comment": "{\"permission\":\"The Agreement concluded via the Registered Connector (RC) covers only the exchange of Data effected on the basis of the major API version (as specified in the dataset attribute base-URL), the major Asset-Version (dataset attribute cx-common:version), and/or the major Aspect Model Version as applicable at the time of concluding the Agreement. The Agreement concluded via the RC must be renegotiated in the event of any change to at least one of these major versions. The Agreement does not need to be renegotiated in the event of any change to one of these minor versions. The definitions of major and minor version is based on Semantic Versioning (https://semver.org/).\"}"
     },
     "VersionChangesMajorRightOperand": {
       "type": "string",
       "const": "cx.versionChanges.major:1",
-      "$comment": "{\"permission\":\"The Agreement concluded via the RC covers any data exchange, which shall be effected via the API specified by the dataset attribute dct:type, irrespective of whether the API version applicable at the time of contract conclusion (as part of the dataset attribute base-URL), the Asset Version (dataset attribute cx-common:version), or the Aspect Model version changes.\"}"
+      "$comment": "{\"permission\":\"The Agreement concluded via the Registered Connector (RC) covers any data exchange, which shall be effected via the API specified by the dataset attribute dct:type, irrespective of whether the API version applicable at the time of contract conclusion (as part of the dataset attribute base-URL), the Asset Version (dataset attribute cx-common:version), or the Aspect Model version changes.\"}"
     }
   }
 }

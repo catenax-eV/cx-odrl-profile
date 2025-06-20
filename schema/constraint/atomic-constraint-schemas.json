@@ -88,9 +88,6 @@
           "$ref": "https://w3id.org/catenax/2025/9/policy/version-changes-constraint-schema.json"
         },
         {
-          "$ref": "https://w3id.org/catenax/2025/9/policy/participant-end-constraint-schema.json"
-        },
-        {
           "$ref": "https://w3id.org/catenax/2025/9/policy/contract-termination-constraint-schema.json"
         },
         {

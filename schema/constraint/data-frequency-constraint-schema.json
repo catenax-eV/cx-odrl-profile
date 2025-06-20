@@ -32,12 +32,12 @@
     "DataFrequencyOnceRightOperand": {
       "type": "string",
       "const": "cx.dataFrequency:once:1",
-      "$comment": "{\"permission\":\"This Agreement concluded via the RC applies both to a one-time, time-limited data exchange as well as to sequential data exchanges under similar conditions, potentially also in varying quantities (Data as a Service).\"}"
+      "$comment": "{\"permission\":\"This Agreement concluded via the Registered Connector (RC). applies both to a one-time, time-limited data exchange as well as to sequential data exchanges under similar conditions, potentially also in varying quantities (Data as a Service).\"}"
     },
     "DataFrequencyUnlimitedRightOperand": {
       "type": "string",
       "const": "cx.dataFrequency:unlimited:1",
-      "$comment": "{\"permission\":\"This Agreement concluded via the RC applies to the multiple or repeated exchange of similar Data at different times and in different quantities within the scope of the selected Use Case.\"}"
+      "$comment": "{\"permission\":\"This Agreement concluded via the Registered Connector (RC). applies to the multiple or repeated exchange of similar Data at different times and in different quantities within the scope of the selected Use Case.\"}"
     }
   }
 }

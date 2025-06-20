@@ -34,7 +34,7 @@
     "BpnlRightOperand": {
       "type": "string",
       "pattern": "^BPNL[0-9A-Z]{12}$",
-      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by the Affiliated companies within the meaning of Section 15 German Stock Corporation Act ('Affiliated Companies') ('Sublicensing') specified herein, provided that the Data Consumer ensures that such companies and/or its its Affiliated Companies comply with the terms of the Agreement concluded via the RC.\",\"prohibition\":\"The Data Consumer is not entitled to make the Data available for use by the companies specified herein ('Sublicensing'), unless the Parties have otherwise agreed on a right to sublicense the Data (either in full or with respect to individual affiliated companies) in the referenced  contract ('cx-policy:ContractReference') or have agreed to this separately.\"}"
+      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by the Affiliated companies within the meaning of Section 15 German Stock Corporation Act ('Affiliated Companies') ('Sublicensing') specified herein, provided that the Data Consumer ensures that such companies and/or its its Affiliated Companies comply with the terms of the Agreement concluded via the Registered Connector (RC).\",\"prohibition\":\"The Data Consumer is not entitled to make the Data available for use by the companies specified herein ('Sublicensing'), unless the Parties have otherwise agreed on a right to sublicense the Data (either in full or with respect to individual affiliated companies) in the referenced  contract ('cx-policy:ContractReference') or have agreed to this separately.\"}"
     }
   }
 }
