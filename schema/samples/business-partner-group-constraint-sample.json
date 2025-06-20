@@ -1,0 +1,7 @@
+{
+  "leftOperand": "BusinessPartnerGroup",
+  "operator": "isAnyOf",
+  "rightOperand": [
+    "BPNL012345678910"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "leftOperand": "UsagePurpose",
+    "operator": "eq",
+    "rightOperand": [
+        "cx.core.legalRequirementForThirdparty:1"
+    ]
+}
