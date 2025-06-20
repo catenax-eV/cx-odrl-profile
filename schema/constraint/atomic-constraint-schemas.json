@@ -48,10 +48,10 @@
           "$ref": "https://w3id.org/catenax/2025/9/policy/membership-constraint-schema.json"
         },
         {
-          "$ref": "#/definitions/BusinessPartnerNumberConstraint"
+          "$ref": "https://w3id.org/catenax/2025/9/policy/business-partner-number-constraint-schema.json"
         },
         {
-          "$ref": "#/definitions/BusinessPartnerGroupConstraint"
+          "$ref": "https://w3id.org/catenax/2025/9/policy/business-partner-group-constraint-schema.json"
         }
       ]
     },
@@ -121,7 +121,7 @@
           "$ref": "https://w3id.org/catenax/2025/9/policy/jurisdiction-location-reference-constraint-schema.json"
         },
         {
-          "$ref": "#/definitions/PrecedenceConstraint"
+          "$ref": "https://w3id.org/catenax/2025/9/policy/precedence-constraint-schema.json"
         },
         {
           "oneOf": [
