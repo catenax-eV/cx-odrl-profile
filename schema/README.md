@@ -4,7 +4,7 @@
 Catena-X has created a set of well-known rules (policies) for sharing data within its network, called the Dataspace. These rules were previously described in different formats.
 
 **What’s new?**
-With the latest update (Release 2025-09), there is now a clear and standardized way (using JSON Schemas) for Dataspaces to define and share their own policy profiles.
+With the latest update [Dataspace Protocol Release 2025-1](https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1-RC2/), there is now a clear and standardized way (using JSON Schemas) for Dataspaces to define and share their own policy profiles.
 
 **Key Component: The Constraint Object**
 The Constraint object is a building block in the Dataspace Protocol. It is used in important messages that help companies create legally binding data exchange agreements.
