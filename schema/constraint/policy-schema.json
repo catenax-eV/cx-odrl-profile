@@ -75,47 +75,10 @@
           "items": {
             "$ref": "#/definitions/AccessPermissionConstraint"
           }
-        },
-        "andSequence": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/AccessPermissionConstraint"
-          }
-        },
-        "or": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/AccessPermissionConstraint"
-          }
-        },
-        "xone": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/AccessPermissionConstraint"
-          }
         }
       },
-      "oneOf": [
-        {
-          "required": [
-            "and"
-          ]
-        },
-        {
-          "required": [
-            "andSequence"
-          ]
-        },
-        {
-          "required": [
-            "or"
-          ]
-        },
-        {
-          "required": [
-            "xone"
-          ]
-        }
+      "required": [
+        "and"
       ]
     },
     "UsagePolicy": {
@@ -249,47 +212,10 @@
           "items": {
             "$ref": "#/definitions/UsagePermissionConstraint"
           }
-        },
-        "andSequence": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsagePermissionConstraint"
-          }
-        },
-        "or": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsagePermissionConstraint"
-          }
-        },
-        "xone": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsagePermissionConstraint"
-          }
         }
       },
-      "oneOf": [
-        {
-          "required": [
-            "and"
-          ]
-        },
-        {
-          "required": [
-            "andSequence"
-          ]
-        },
-        {
-          "required": [
-            "or"
-          ]
-        },
-        {
-          "required": [
-            "xone"
-          ]
-        }
+      "required": [
+        "and"
       ]
     },
     "UsageProhibitionConstraint": {
@@ -311,47 +237,10 @@
           "items": {
             "$ref": "#/definitions/UsageProhibitionConstraint"
           }
-        },
-        "andSequence": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsageProhibitionConstraint"
-          }
-        },
-        "or": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsageProhibitionConstraint"
-          }
-        },
-        "xone": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsageProhibitionConstraint"
-          }
         }
       },
-      "oneOf": [
-        {
-          "required": [
-            "and"
-          ]
-        },
-        {
-          "required": [
-            "andSequence"
-          ]
-        },
-        {
-          "required": [
-            "or"
-          ]
-        },
-        {
-          "required": [
-            "xone"
-          ]
-        }
+      "required": [
+        "and"
       ]
     }
   }
