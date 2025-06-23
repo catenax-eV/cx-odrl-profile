@@ -44,7 +44,8 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/definitions/AccessPermissionConstraint"
-                  }
+                  },
+                  "uniqueItems": true
                 }
               }
             }
@@ -97,7 +98,8 @@
                   "minItems": 1,
                   "items": {
                     "$ref": "#/definitions/UsagePermissionConstraint"
-                  }
+                  },
+                  "uniqueItems": true
                 }
               },
               "required": [
@@ -125,7 +127,8 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/definitions/UsageProhibitionConstraint"
-                  }
+                  },
+                  "uniqueItems": true
                 }
               },
               "required": [
