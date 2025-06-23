@@ -7,7 +7,7 @@
       "$ref": "#/definitions/CatenaXPolicy"
     }
   ],
-  "$id": "https://w3id.org/catenax/2025/9/policy/usage-permission-schema.json",
+  "$id": "https://w3id.org/catenax/2025/9/policy/policy-schema.json",
   "definitions": {
     "CatenaXPolicy": {
       "allOf": [
