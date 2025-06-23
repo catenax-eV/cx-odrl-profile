@@ -46,10 +46,7 @@
                     "$ref": "#/definitions/AccessPermissionConstraint"
                   }
                 }
-              },
-              "required": [
-                "constraint"
-              ]
+              }
             }
           ]
         },
