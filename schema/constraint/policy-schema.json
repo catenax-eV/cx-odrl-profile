@@ -44,12 +44,10 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/definitions/AccessPermissionConstraint"
-                  }
+                  },
+                  "uniqueItems": true
                 }
-              },
-              "required": [
-                "constraint"
-              ]
+              }
             }
           ]
         },
@@ -75,47 +73,10 @@
           "items": {
             "$ref": "#/definitions/AccessPermissionConstraint"
           }
-        },
-        "andSequence": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/AccessPermissionConstraint"
-          }
-        },
-        "or": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/AccessPermissionConstraint"
-          }
-        },
-        "xone": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/AccessPermissionConstraint"
-          }
         }
       },
-      "oneOf": [
-        {
-          "required": [
-            "and"
-          ]
-        },
-        {
-          "required": [
-            "andSequence"
-          ]
-        },
-        {
-          "required": [
-            "or"
-          ]
-        },
-        {
-          "required": [
-            "xone"
-          ]
-        }
+      "required": [
+        "and"
       ]
     },
     "UsagePolicy": {
@@ -134,9 +95,11 @@
                 },
                 "constraint": {
                   "type": "array",
+                  "minItems": 1,
                   "items": {
                     "$ref": "#/definitions/UsagePermissionConstraint"
-                  }
+                  },
+                  "uniqueItems": true
                 }
               },
               "required": [
@@ -164,7 +127,8 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/definitions/UsageProhibitionConstraint"
-                  }
+                  },
+                  "uniqueItems": true
                 }
               },
               "required": [
@@ -249,47 +213,10 @@
           "items": {
             "$ref": "#/definitions/UsagePermissionConstraint"
           }
-        },
-        "andSequence": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsagePermissionConstraint"
-          }
-        },
-        "or": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsagePermissionConstraint"
-          }
-        },
-        "xone": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsagePermissionConstraint"
-          }
         }
       },
-      "oneOf": [
-        {
-          "required": [
-            "and"
-          ]
-        },
-        {
-          "required": [
-            "andSequence"
-          ]
-        },
-        {
-          "required": [
-            "or"
-          ]
-        },
-        {
-          "required": [
-            "xone"
-          ]
-        }
+      "required": [
+        "and"
       ]
     },
     "UsageProhibitionConstraint": {
@@ -311,47 +238,10 @@
           "items": {
             "$ref": "#/definitions/UsageProhibitionConstraint"
           }
-        },
-        "andSequence": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsageProhibitionConstraint"
-          }
-        },
-        "or": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsageProhibitionConstraint"
-          }
-        },
-        "xone": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/UsageProhibitionConstraint"
-          }
         }
       },
-      "oneOf": [
-        {
-          "required": [
-            "and"
-          ]
-        },
-        {
-          "required": [
-            "andSequence"
-          ]
-        },
-        {
-          "required": [
-            "or"
-          ]
-        },
-        {
-          "required": [
-            "xone"
-          ]
-        }
+      "required": [
+        "and"
       ]
     }
   }
