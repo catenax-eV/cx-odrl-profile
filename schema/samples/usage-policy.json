@@ -1,0 +1,55 @@
+{
+  "@type": "Set",
+  "permission": [
+    {
+      "action": "use",
+      "constraint": [
+        {
+          "leftOperand": "FrameworkAgreement",
+          "operator": "eq",
+          "rightOperand": "DataExchangeGovernance:1.0"
+        },
+        {
+          "leftOperand": "UsagePurpose",
+          "operator": "eq",
+          "rightOperand": [
+            "cx.core.digitalTwinRegistry:1",
+            "cx.pcf.base:1"
+          ]
+        },
+        {
+          "leftOperand": "DataUsageEndDefinition",
+          "operator": "eq",
+          "rightOperand": "cx.dataUsageEnd.unlimited"
+        }
+      ]
+    }
+  ],
+  "prohibition": [
+    {
+      "action": "use",
+      "constraint": [
+        {
+          "leftOperand": "UsageRestriction",
+          "operator": "eq",
+          "rightOperand": [
+            "cx.thirdParty.forbidden:1",
+            "cx.manipulation.forbidden:1"
+          ]
+        }
+      ]
+    }
+  ],
+  "duty": [
+    {
+      "action": "use",
+      "constraint": [
+        {
+          "leftOperand": "DataProvisioningEndDate",
+          "operator": "eq",
+          "rightOperand": "2023-10-04T12:30:00Z"
+        }
+      ]
+    }
+  ]
+}

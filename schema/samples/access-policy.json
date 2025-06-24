@@ -1,0 +1,26 @@
+{
+  "@type": "Set",
+  "permission": [
+    {
+      "action": "access",
+      "constraint": [
+        {
+          "and": [
+            {
+              "leftOperand": "Membership",
+              "operator": "eq",
+              "rightOperand": "active"
+            },
+            {
+              "leftOperand": "BusinessPartnerNumber",
+              "operator": "eq",
+              "rightOperand": [
+                "BPNL012345678910"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
