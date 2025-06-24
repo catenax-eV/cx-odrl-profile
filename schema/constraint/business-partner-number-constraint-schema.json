@@ -18,7 +18,10 @@
         },
         "operator": {
           "type": "string",
-          "const": "eq"
+          "enum": [
+            "isAnyOf",
+            "isNoneOf"
+          ]
         },
         "rightOperand": {
           "type":"array",

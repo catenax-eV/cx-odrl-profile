@@ -21,26 +21,20 @@
           "const": "eq"
         },
         "rightOperand": {
-          "oneOf": [
-            {
-              "$ref": "#/definitions/ManagedLegalEntityRegionAllRightOperand"
-            },
-            {
-              "type":"array",
-              "minItems": 1,
-              "items": {
-                "anyOf": [
-                  {"$ref": "#/definitions/ManagedLegalEntityRegionEuropeRightOperand"},
-                  {"$ref": "#/definitions/ManagedLegalEntityRegionNorthAmericaRightOperand"},
-                  {"$ref": "#/definitions/ManagedLegalEntityRegionSouthAmericaRightOperand"},
-                  {"$ref": "#/definitions/ManagedLegalEntityRegionAfricaRightOperand"},
-                  {"$ref": "#/definitions/ManagedLegalEntityRegionAsiaRightOperand"},
-                  {"$ref": "#/definitions/ManagedLegalEntityRegionOceaniaRightOperand"},
-                  {"$ref": "#/definitions/ManagedLegalEntityRegionAntarcticaRightOperand"}
-                ]
-              }
-            }
-          ]
+          "type":"array",
+          "minItems": 1,
+          "items": {
+            "anyOf": [
+              {"$ref": "#/definitions/ManagedLegalEntityRegionAllRightOperand"},
+              {"$ref": "#/definitions/ManagedLegalEntityRegionEuropeRightOperand"},
+              {"$ref": "#/definitions/ManagedLegalEntityRegionNorthAmericaRightOperand"},
+              {"$ref": "#/definitions/ManagedLegalEntityRegionSouthAmericaRightOperand"},
+              {"$ref": "#/definitions/ManagedLegalEntityRegionAfricaRightOperand"},
+              {"$ref": "#/definitions/ManagedLegalEntityRegionAsiaRightOperand"},
+              {"$ref": "#/definitions/ManagedLegalEntityRegionOceaniaRightOperand"},
+              {"$ref": "#/definitions/ManagedLegalEntityRegionAntarcticaRightOperand"}
+            ]
+          }
         }
       },
       "additionalProperties": false

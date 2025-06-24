@@ -18,29 +18,23 @@
         },
         "operator": {
           "type": "string",
-          "const": "eq"
+          "const": "isAnyOf"
         },
         "rightOperand": {
-          "oneOf": [
-            {
-              "$ref": "#/definitions/RegionAllRightOperand"
-            },
-            {
-              "type":"array",
-              "minItems": 1,
-              "items": {
-                "anyOf": [
-                  {"$ref": "#/definitions/RegionEuropeRightOperand"},
-                  {"$ref": "#/definitions/RegionNorthAmericaRightOperand"},
-                  {"$ref": "#/definitions/RegionSouthAmericaRightOperand"},
-                  {"$ref": "#/definitions/RegionAfricaRightOperand"},
-                  {"$ref": "#/definitions/RegionAsiaRightOperand"},
-                  {"$ref": "#/definitions/RegionOceaniaRightOperand"},
-                  {"$ref": "#/definitions/RegionAntarcticaRightOperand"}
-                ]
-              }
-            }
-          ]
+          "type":"array",
+          "minItems": 1,
+          "items": {
+            "anyOf": [
+              {"$ref": "#/definitions/RegionAllRightOperand"},
+              {"$ref": "#/definitions/RegionEuropeRightOperand"},
+              {"$ref": "#/definitions/RegionNorthAmericaRightOperand"},
+              {"$ref": "#/definitions/RegionSouthAmericaRightOperand"},
+              {"$ref": "#/definitions/RegionAfricaRightOperand"},
+              {"$ref": "#/definitions/RegionAsiaRightOperand"},
+              {"$ref": "#/definitions/RegionOceaniaRightOperand"},
+              {"$ref": "#/definitions/RegionAntarcticaRightOperand"}
+            ]
+          }
         }
       },
       "additionalProperties": false

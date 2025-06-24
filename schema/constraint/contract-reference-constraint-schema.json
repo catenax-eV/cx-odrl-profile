@@ -21,12 +21,7 @@
           "const": "eq"
         },
         "rightOperand": {
-          "type":"array",
-          "minItems": 1,
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/definitions/ContractReferenceRightOperand"
-          }
+          "$ref": "#/definitions/ContractReferenceRightOperand"
         }
       },
       "additionalProperties": false
