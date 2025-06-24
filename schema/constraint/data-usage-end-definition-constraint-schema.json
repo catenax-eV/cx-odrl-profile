@@ -9,7 +9,7 @@
   ],
   "$id": "https://w3id.org/catenax/2025/9/policy/data-usage-end-definition-constraint-schema.json",
   "definitions": {
-    "DataUsageEndNoneConstraint": {
+    "DataUsageEndDefinitionConstraint": {
       "type": "object",
       "properties": {
         "leftOperand": {
