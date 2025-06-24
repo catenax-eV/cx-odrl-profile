@@ -18,10 +18,15 @@
         },
         "operator": {
           "type": "string",
-          "const": "eq"
+          "const": "isAllOf"
         },
         "rightOperand": {
-          "$ref": "#/definitions/ContractReferenceRightOperand"
+          "type":"array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/ContractReferenceRightOperand"
+          }
         }
       },
       "additionalProperties": false
