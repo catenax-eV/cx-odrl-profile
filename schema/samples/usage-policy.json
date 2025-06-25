@@ -1,6 +1,9 @@
 {
+  "@context": [
+    "https://w3id.org/catenax/2025/9/policy/context.jsonld"
+  ],
   "@type": "Set",
-  "@id": "some-id"
+  "@id": "some-id",
   "permission": [
     {
       "action": "use",
@@ -41,7 +44,7 @@
       ]
     }
   ],
-  "duty": [
+  "obligation": [
     {
       "action": "use",
       "constraint": [
