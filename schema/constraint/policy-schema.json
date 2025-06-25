@@ -57,7 +57,7 @@
         "type": "array",
         "maxItems": 0
       },
-      "duty": {
+      "obligation": {
         "type": "array",
         "maxItems": 0
       }
@@ -147,7 +147,7 @@
         },
         "minItems": 1
       },
-      "duty": {
+      "obligation": {
         "type": "array",
         "items": {
           "allOf": [
@@ -197,7 +197,7 @@
         },
         {
           "required": [
-            "duty"
+            "obligation"
           ]
         }
       ]
