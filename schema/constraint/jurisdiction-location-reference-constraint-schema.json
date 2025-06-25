@@ -36,7 +36,7 @@
     },
     "LocationContractReferenceRightOperand": {
       "type": "string",
-      "const": "cx.location.contractReference",
+      "const": "cx.location.contractReference:1",
       "$comment": "{\"permission\":\"The exclusive venue for all disputes arising from the Agreement concluded via the Registered Connector (RC) shall correspond to the venue specified in the referenced contract (as referenced in cx-policy:ContractReference).\"}"
     }
   }

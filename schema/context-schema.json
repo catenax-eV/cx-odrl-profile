@@ -10,7 +10,7 @@
       "$ref": "#/definitions/ContextSchema"
     }
   ],
-  "$id": "https://w3id.org/catenax/2025/9/policy/context-schema.json",
+  "$id": "https://w3id.org/catenax/2025/9/policy/schema/context-schema.json",
   "definitions": {
     "ContextSchema": {
       "type": "array",

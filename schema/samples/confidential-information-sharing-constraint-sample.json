@@ -2,7 +2,7 @@
   "leftOperand": "ConfidentialInformationSharing",
   "operator": "eq",
   "rightOperand": [
-    "cx.sharing.affiliates",
-    "cx.sharing.managedLegalEntity"
+    "cx.sharing.affiliates:1",
+    "cx.sharing.managedLegalEntity:1"
   ]
 }

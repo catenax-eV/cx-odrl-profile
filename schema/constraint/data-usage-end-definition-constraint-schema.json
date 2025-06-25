@@ -28,7 +28,7 @@
     },
     "DataUsageEndDefinitionRightOperand": {
       "type": "string",
-      "const": "cx.dataUsageEnd.unlimited",
+      "const": "cx.dataUsageEnd.unlimited:1",
       "$comment": "{\"obligation\":\"The Data Provider shall make the Data available for an unlimited period of use in accordance with the usage conditions specified in cx-policy:UsagePurpose, commencing from the second the Agreement is concluded via the Registered Connector (RC).\"}"
     }
   }

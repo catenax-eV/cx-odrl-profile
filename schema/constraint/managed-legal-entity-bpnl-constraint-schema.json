@@ -34,7 +34,7 @@
     "ManagedLegalEntityBpnlRightOperand": {
       "type": "string",
       "pattern": "^BPNL[0-9A-Z]{12}$",
-      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use to the companies specified herein (‘Sublicensing’), for which the Data Consumer acts in an ‘is managed by’ relationship (within the meaning of the Catena-X Standard CX-0076), provided that the Data Consumer ensures that such managed companies comply with the terms of the Agreement concluded via the Registered Connector (RC).\"}"
+      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use to the companies specified herein ('Sublicensing'), for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard CX-0074), provided that the Data Consumer ensures that such managed companies comply with the terms of the Agreement concluded via the Registered Connector (RC).\"}"
     }
   }
 }

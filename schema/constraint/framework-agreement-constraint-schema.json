@@ -28,8 +28,8 @@
     },
     "DataExchangeGovernanceRightOperand": {
       "type": "string",
-      "const": "DataExchangeGovernance:1.0",
-      "$comment": "{\"permission\":\"Data Provider and Data Consumer agree to the Data Exchange Governance published by the Catena-X Automotive Network e.V. (Association) as basis for this Agreement concluded via the Registered Connector (RC).\"}"
+      "const": "DataExchangeGovernance:2.0",
+      "$comment": "{\"permission\":\"Data Provider and Data Consumer agree to the Data Exchange Governance published by the Catena-X Automotive Network e.V. (Association) as basis for this Agreement concluded via the Registered Connector (RC). The Data Exchange Governance Version 2.0 can be found here: https://catenax-ev.github.io/docs/regulatory-framework/20000ft/data-exchange-governance after CX-Saturn has been released.\"}"
     }
   }
 }

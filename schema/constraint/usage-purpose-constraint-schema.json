@@ -207,7 +207,7 @@
     },
     "UsagePurposeIndividualRightOperand": {
       "type": "string",
-      "$comment": "{\"permission\":\"The Parties are free to individually agree this certain purpose of use. The legal meaning of this certain purpose need to be agreed individually between Data Provider and Data Consumer.\"}"
+      "$comment": "{\"permission\":\"Data Provider and Data Consumer are free to individually agree this certain purpose of use. The legal meaning of this certain purpose need to be agreed individually between Data Provider and Data Consumer.\"}"
     }
   }
 }

@@ -42,7 +42,7 @@
     },
     "WarrantyDataQualityIssuesRightOperand": {
       "type": "string",
-      "const": "cx.warranty.dataQualityIssues",
+      "const": "cx.warranty.dataQualityIssues:1",
       "$comment": "{\"permission\":\"In the event of a material deviation from the contractually agreed data quality, the Data Provider shall be entitled to (i) demand the rectification of defects by provision of Data in the quality owed, (ii) terminate the contract in the event of failure to remedy the defect, and (iii) claim damages in accordance with the liability provisions set out below.\"}"
     }
   }

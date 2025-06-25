@@ -42,42 +42,42 @@
     "ManagedLegalEntityRegionAllRightOperand": {
       "type": "string",
       "const": "cx.region.all:1",
-      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0076') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC).\"}"
+      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0074') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC).\"}"
     },
     "ManagedLegalEntityRegionEuropeRightOperand": {
       "type": "string",
       "const": "cx.region.europe:1",
-      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0076') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in Europe.\"}"
+      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0074') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in Europe.\"}"
     },
     "ManagedLegalEntityRegionNorthAmericaRightOperand": {
       "type": "string",
       "const": "cx.region.northAmerica:1",
-      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0076') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in North America.\"}"
+      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0074') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in North America.\"}"
     },
     "ManagedLegalEntityRegionSouthAmericaRightOperand": {
       "type": "string",
       "const": "cx.region.southAmerica:1",
-      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0076') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in South America.\"}"
+      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0074') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in South America.\"}"
     },
     "ManagedLegalEntityRegionAfricaRightOperand": {
       "type": "string",
       "const": "cx.region.africa:1",
-      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0076') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in Africa.\"}"
+      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0074') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in Africa.\"}"
     },
     "ManagedLegalEntityRegionAsiaRightOperand": {
       "type": "string",
       "const": "cx.region.asia:1",
-      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0076') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in Asia.\"}"
+      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0074') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in Asia.\"}"
     },
     "ManagedLegalEntityRegionOceaniaRightOperand": {
       "type": "string",
       "const": "cx.region.oceania:1",
-      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0076') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in Oceania.\"}"
+      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0074') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in Oceania.\"}"
     },
     "ManagedLegalEntityRegionAntarcticaRightOperand": {
       "type": "string",
       "const": "cx.region.antarctica:1",
-      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0076') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in Antarctica.\"}"
+      "$comment": "{\"permission\":\"The Data Provider permits the Data Consumer to make the Data available for use by those companies for which the Data Consumer acts in an 'is managed by' relationship (within the meaning of the Catena-X Standard 'CX-0074') ('Sublicensing'), provided that the Data Consumer ensures that such companies comply with the terms of the Agreement concluded via the Registered Connector (RC). The registered offices of such managed companies must be located in Antarctica.\"}"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
   "leftOperand": "JurisdictionLocationReference",
   "operator": "eq",
-  "rightOperand": "cx.location.dataConsumer"
+  "rightOperand": "cx.location.dataConsumer:1"
 }
