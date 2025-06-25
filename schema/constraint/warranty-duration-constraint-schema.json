@@ -14,36 +14,21 @@
       "properties": {
         "leftOperand": {
           "type": "string",
-          "const": "WarrantyDuration"
+          "const": "WarrantyDurationMonths"
         },
         "operator": {
           "type": "string",
           "const": "eq"
         },
         "rightOperand": {
-          "oneOf": [
-            {"$ref": "#/definitions/Warranty1yearRightOperand"},
-            {"$ref": "#/definitions/Warranty2yearsRightOperand"},
-            {"$ref": "#/definitions/WarrantyContractEndDateRightOperand"}
-          ]
+          "$ref": "#/definitions/WarrantyDurationMonthsRightOperand"
         }
       },
       "additionalProperties": false
     },
-    "Warranty1yearRightOperand": {
-      "type": "string",
-      "const": "cx.warranty.1year:1",
-      "$comment": "{\"permission\":\"The provision of the Data is subject to a warranty for material and legal defects for a period of one year.\"}"
-    },
-    "Warranty2yearsRightOperand": {
-      "type": "string",
-      "const": "cx.warranty.2years:1",
-      "$comment": "{\"permission\":\"The provision of the Data is subject to a warranty for material and legal defects for a period of two years.\"}"
-    },
-    "WarrantyContractEndDateRightOperand": {
-      "type": "string",
-      "const": "cx.warranty.contractEndDate:1",
-      "$comment": "{\"permission\":\"The provision of the Data is subject to a warranty for material defects and defects in title until the end of the Agreement.\"}"
+    "WarrantyDurationMonthsRightOperand": {
+      "type": "integer",
+      "$comment": "{\"permission\":\"The provision of the Data is subject to a warranty for material and legal defects for a period specified herein in months.\"}"
     }
   }
 }

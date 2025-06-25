@@ -24,12 +24,7 @@
           "$ref": "#/definitions/DataExchangeGovernanceRightOperand"
         }
       },
-      "additionalProperties": false,
-      "required": [
-        "rightOperand",
-        "operator",
-        "leftOperand"
-      ]
+      "additionalProperties": false
     },
     "DataExchangeGovernanceRightOperand": {
       "type": "string",

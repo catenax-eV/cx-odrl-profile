@@ -18,7 +18,7 @@
         },
         "operator": {
           "type": "string",
-          "const": "eq"
+          "const": "isAllOf"
         },
         "rightOperand": {
           "type": "array",
