@@ -1,6 +1,6 @@
 {
   "@context": {
-    "cx-policy": "https://w3id.org/catenax/2025/9/policy/",
+    "cx-policy": "https://w3id.org/catenax/policy/",
     "odrl": "http://www.w3.org/ns/odrl/2/",
     "access": {
       "@id": "cx-policy:access"
