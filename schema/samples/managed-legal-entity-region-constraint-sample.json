@@ -1,6 +1,6 @@
 {
   "leftOperand": "ManagedLegalEntityRegion",
-  "operator": "eq",
+  "operator": "isAnyOf",
   "rightOperand": [
     "cx.region.southAmerica:1",
     "cx.region.oceania:1"

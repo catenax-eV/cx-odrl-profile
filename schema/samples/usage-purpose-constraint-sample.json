@@ -1,7 +1,9 @@
 {
     "leftOperand": "UsagePurpose",
-    "operator": "eq",
+    "operator": "isAnyOf",
     "rightOperand": [
-        "cx.core.legalRequirementForThirdparty:1"
+        "cx.dcm.base:1",
+        "cx.bpdm.pool:1",
+        "cx.puris.base:1"    
     ]
 }

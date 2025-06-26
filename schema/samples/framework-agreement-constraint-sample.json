@@ -1,5 +1,5 @@
 {
   "leftOperand": "FrameworkAgreement",
   "operator": "eq",
-  "rightOperand": "DataExchangeGovernance:1.0"
+  "rightOperand": "DataExchangeGovernance:2.0"
 }

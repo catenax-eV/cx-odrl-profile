@@ -1,6 +1,6 @@
 {
     "leftOperand": "AffiliatesBpnl",
-    "operator": "eq",
+    "operator": "isAnyOf",
     "rightOperand": [
         "BPNL012345678910"
     ]

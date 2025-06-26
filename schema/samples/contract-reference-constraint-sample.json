@@ -1,6 +1,6 @@
 {
     "leftOperand": "ContractReference",
-    "operator": "eq",
+    "operator": "isAllOf",
     "rightOperand": [
         "ContractID250620197"
     ]

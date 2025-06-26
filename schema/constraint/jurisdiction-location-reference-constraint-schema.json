@@ -31,7 +31,7 @@
     },
     "LocationDataConsumerRightOperand": {
       "type": "string",
-      "const": "cx.location.dataConsumer",
+      "const": "cx.location.dataConsumer:1",
       "$comment": "{\"permission\":\"The exclusive venue for all disputes arising from the contract concluded via the Registered Connector (RC) shall be at the competent court at the registered office of the Data Consumer.\"}"
     },
     "LocationContractReferenceRightOperand": {

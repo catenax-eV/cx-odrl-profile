@@ -69,7 +69,7 @@
           "$ref": "#/definitions/AccessPermissionLogicalConstraint"
         },
         {
-          "$ref": "https://w3id.org/catenax/2025/9/policy/atomic-constraint-schemas.json#/definitions/AtomicAccessPermissionConstraint"
+          "$ref": "https://w3id.org/catenax/2025/9/policy/schema/atomic-constraint-schemas.json#/definitions/AtomicAccessPermissionConstraint"
         }
       ]
     },

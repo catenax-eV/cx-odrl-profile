@@ -1,6 +1,6 @@
 {
   "leftOperand": "ConfidentialInformationSharing",
-  "operator": "eq",
+  "operator": "isAnyOf",
   "rightOperand": [
     "cx.sharing.affiliates:1",
     "cx.sharing.managedLegalEntity:1"

@@ -1,7 +1,8 @@
 {
   "leftOperand": "ManagedLegalEntityBpnl",
-  "operator": "eq",
+  "operator": "isAnyOf",
   "rightOperand": [
-    "BPNL012345678910"
+    "BPNL012345678910",
+    "BPNL543210987612"
   ]
 }

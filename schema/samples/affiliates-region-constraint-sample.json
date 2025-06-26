@@ -1,8 +1,8 @@
 {
   "leftOperand": "AffiliatesRegion",
-  "operator": "eq",
+  "operator": "isAnyOf",
   "rightOperand": [
-    "cx.region.southAmerica:1",
-    "cx.region.africa:1"
+    "cx.region.europe:1", 
+    "cx.region.northAmerica:1"
   ]
 }

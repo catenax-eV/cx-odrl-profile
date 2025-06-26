@@ -2,20 +2,22 @@
   "@context": [
     "https://w3id.org/catenax/2025/9/policy/context.jsonld"
   ],
-  "@type": "Set",
+  "@type": "Offer", //validation if the right type is used based on the policy-schema.json
   "@id": "some-id",
   "permission": [
     {
-      "action": "use",
+      "action": "use", //validation that only the action use is used based on the policy-schema.json
       "constraint": [
         {
-          "leftOperand": "FrameworkAgreement",
-          "operator": "eq",
-          "rightOperand": "DataExchangeGovernance:1.0"
-        },
+          "and": [ //validation that only and operator is allowed between constraints based on the policy-schema.json
+        {
+          "leftOperand": "FrameworkAgreement", //validation that only constraints of AtomicUsagePermissionConstraint are allowed based on the policy-schema.json
+          "operator": "eq", //validation that only operators for the specific constraint are allowed (in the case of FrameworkAgreement it is only eq) based on the policy-schema.json 
+          "rightOperand": "DataExchangeGovernance:1.0" //validation that only the allowed operands are entered for the specific constraint based on the policy-schema.json 
+        }, // Validation that checks for all sections prohibition, obligation, permission all leftOperands, rightOperands and operators analogously.
         {
           "leftOperand": "UsagePurpose",
-          "operator": "eq",
+          "operator": "isAnyOf",
           "rightOperand": [
             "cx.core.digitalTwinRegistry:1",
             "cx.pcf.base:1"
@@ -26,20 +28,26 @@
           "operator": "eq",
           "rightOperand": "cx.dataUsageEnd.unlimited"
         }
+        ]
+       }
       ]
-    }
-  ],
+     }
+   ],
   "prohibition": [
     {
       "action": "use",
       "constraint": [
         {
+          "and": [
+        {
           "leftOperand": "UsageRestriction",
-          "operator": "eq",
+          "operator": "isAllOf",
           "rightOperand": [
             "cx.thirdParty.forbidden:1",
             "cx.manipulation.forbidden:1"
           ]
+        }
+        ]
         }
       ]
     }
@@ -49,11 +57,15 @@
       "action": "use",
       "constraint": [
         {
+          "and": [
+        {
           "leftOperand": "DataProvisioningEndDate",
           "operator": "eq",
           "rightOperand": "2023-10-04T12:30:00Z"
         }
       ]
+      }
+    ]
     }
   ]
 }
