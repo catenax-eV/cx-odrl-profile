@@ -15,7 +15,8 @@
           "operator": "eq", //validation that only operators for the specific constraint are allowed (in the case of FrameworkAgreement it is only eq) based on the policy-schema.json 
           "rightOperand": "DataExchangeGovernance:1.0" //validation that only the allowed operands are entered for the specific constraint based on the policy-schema.json 
         }, // Validation that checks for all sections prohibition, obligation, permission all leftOperands, rightOperands and operators analogously.
-        {
+        {  // all constraints are unique. Validation checks that no duplucates are allowed
+// rules exist that sometimes only 1 of 2 constraints is allowed in a usage policy or only 1 of x right operands. Validation should check this.      
           "leftOperand": "UsagePurpose",
           "operator": "isAnyOf",
           "rightOperand": [

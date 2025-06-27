@@ -2,19 +2,19 @@
   "@context": [
     "https://w3id.org/catenax/2025/9/policy/context.jsonld"
   ],
-  "@type": "Offer", //validation if the right type is used based on the policy-schema.json
+  "@type": "Offer",
   "@id": "some-id",
   "permission": [
     {
-      "action": "use", //validation that only the action use is used based on the policy-schema.json
+      "action": "use", 
       "constraint": [
         {
-          "and": [ //validation that only and operator is allowed between constraints based on the policy-schema.json
+          "and": [ 
         {
-          "leftOperand": "FrameworkAgreement", //validation that only constraints of AtomicUsagePermissionConstraint are allowed based on the policy-schema.json
-          "operator": "eq", //validation that only operators for the specific constraint are allowed (in the case of FrameworkAgreement it is only eq) based on the policy-schema.json 
-          "rightOperand": "DataExchangeGovernance:1.0" //validation that only the allowed operands are entered for the specific constraint based on the policy-schema.json 
-        }, // Validation that checks for all sections prohibition, obligation, permission all leftOperands, rightOperands and operators analogously.
+          "leftOperand": "FrameworkAgreement", 
+          "operator": "eq", 
+          "rightOperand": "DataExchangeGovernance:2.0" 
+        }, 
         {
           "leftOperand": "UsagePurpose",
           "operator": "isAnyOf",
