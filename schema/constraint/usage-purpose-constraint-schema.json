@@ -133,7 +133,7 @@
     "BpdmPoolRightOperand": {
       "type": "string",
       "const": "cx.bpdm.pool:1",
-      "$comment": "{\"permission\":\"The Data Consumer may use the Data in line with the following purposes: (i) identifying participants within the Catena-X data space, (ii) identifying internal counterparty (iii), usage in  internal information processes, (iv) invitation of additional participants into the Catena-X data space, (v) usage in Value Added Services (VASs), \",\"additionalInformation\":\"Typically used for: Pool Data Models\"}"
+      "$comment": "{\"permission\":\"The Data Consumer may use the Data in line with the following purposes: (i) identifying participants within the Catena-X data space, (ii) identifying counterparty (iii), usage in  information processes, (iv) invitation of additional participants into the Catena-X data space, (v) usage in Value Added Services (VASs), \",\"additionalInformation\":\"Typically used for: Pool Data Models\"}"
      },
     "BpdmVasCountryrisk": {
       "type": "string",
@@ -188,7 +188,7 @@
     "BpdmVasNpsDownloadRightOperand": {
       "type": "string",
       "const": "cx.bpdm.vas.nps.download:1",
-      "$comment": "{\"permission\":\"The Data Consumer may use the Data in line with the following purpose: verifying its own submitted Business Partner Data.\",\"additionalInformation\":\"Typically used for: Natural Person Screening Data Model\"}"
+      "$comment": "{\"permission\":\"The Data Consumer may use the Data in line with the following purpose: verifying its submitted Business Partner Data.\",\"additionalInformation\":\"Typically used for: Natural Person Screening Data Model\"}"
     },
     "CcmBaseRightOperand": {
       "type": "string",
