@@ -148,6 +148,40 @@
           "$ref": "https://w3id.org/dspace/2025/1/negotiation/contract-schema.json#/definitions/AtomicConstraint"
         },
         {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/AtomicAccessObligationConstraint"
+            },
+            {
+              "$ref": "#/definitions/AtomicUsageObligationConstraint"
+            }
+          ]
+        }
+      ]
+    },
+    "AtomicAccessObligationConstraint": {
+      "allOf": [
+        {
+          "$ref": "https://w3id.org/dspace/2025/1/negotiation/contract-schema.json#/definitions/AtomicConstraint"
+        },
+        {
+          "oneOf": [
+            {
+              "$ref": "https://w3id.org/catenax/2025/9/policy/data-provisioning-end-duration-days-constraint-schema.json"
+            },
+            {
+              "$ref": "https://w3id.org/catenax/2025/9/policy/data-provisioning-end-date-constraint-schema.json"
+            }
+          ]
+        }
+      ]
+    },
+    "AtomicUsageObligationConstraint": {
+      "allOf": [
+        {
+          "$ref": "https://w3id.org/dspace/2025/1/negotiation/contract-schema.json#/definitions/AtomicConstraint"
+        },
+        {
           "oneOf": [
             {
               "$ref": "https://w3id.org/catenax/2025/9/policy/data-provisioning-end-duration-days-constraint-schema.json"
@@ -160,6 +194,43 @@
       ]
     },
     "AtomicProhibitionConstraint": {
+      "allOf": [
+        {
+          "$ref": "https://w3id.org/dspace/2025/1/negotiation/contract-schema.json#/definitions/AtomicConstraint"
+        },
+        {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/AtomicAccessProhibitionConstraint"
+            },
+            {
+              "$ref": "#/definitions/AtomicUsageProhibitionConstraint"
+            }
+          ]
+        }
+      ]
+    },
+    "AtomicAccessProhibitionConstraint": {
+      "allOf": [
+        {
+          "$ref": "https://w3id.org/dspace/2025/1/negotiation/contract-schema.json#/definitions/AtomicConstraint"
+        },
+        {
+          "anyOf": [
+            {
+              "$ref": "https://w3id.org/catenax/2025/9/policy/affiliates-region-constraint-schema.json"
+            },
+            {
+              "$ref": "https://w3id.org/catenax/2025/9/policy/affiliates-bpnl-constraint-schema.json"
+            },
+            {
+              "$ref": "https://w3id.org/catenax/2025/9/policy/usage-restriction-constraint-schema.json"
+            }
+          ]
+        }
+      ]
+    },
+        "AtomicUsageProhibitionConstraint": {
       "allOf": [
         {
           "$ref": "https://w3id.org/dspace/2025/1/negotiation/contract-schema.json#/definitions/AtomicConstraint"
