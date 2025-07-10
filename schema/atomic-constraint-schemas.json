@@ -193,7 +193,7 @@
         }
       ]
     },
-        "AtomicProhibitionConstraint": {
+    "AtomicProhibitionConstraint": {
       "allOf": [
         {
           "$ref": "https://w3id.org/dspace/2025/1/negotiation/contract-schema.json#/definitions/AtomicConstraint"
