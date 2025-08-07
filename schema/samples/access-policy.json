@@ -1,25 +1,26 @@
 {
   "@context": [
+    "http://www.w3.org/ns/odrl.jsonld",
     "https://w3id.org/catenax/2025/9/policy/context.jsonld"
   ],
-  "@type": "Offer", //validation that the right type is used based on the policy-schema.json
+  "@type": "Set", 
   "@id": "some-id",
   "permission": [
     {
-      "action": "access", //validation that the action access is used based on the policy-schema.json
+      "action": "access",
       "constraint": [
         {
-          "and": [ //validation that only and operator is allowed between constraints based on the policy-schema.json
+          "and": [
             {
-              "leftOperand": "Membership", //validation that only constraints of AtomicAccessPermissionConstraint are allowed based on the policy-schema.json 
-              "operator": "eq", //validation that only operators for the specific constraint are allowed (in the case of membership it is only eq) based on the policy-schema.json 
-              "rightOperand": "active" //validation  that only the right operands are entered allowed for the specific constraint based on the policy-schema.json 
+              "leftOperand": "Membership",
+              "operator": "eq", 
+              "rightOperand": "active" 
             },
             {
-              "leftOperand": "BusinessPartnerNumber", //validation  that only constraints of AtomicAccessPermissionConstraint are allowed based on the policy-schema.json 
-              "operator": "isAnyOf", //validation that only operators for the specific constraint are allowed (in the case of BusinessPartnerNumer it is only isAnyOf) based on the policy-schema.json 
+              "leftOperand": "BusinessPartnerNumber", 
+              "operator": "isAnyOf", 
               "rightOperand": [
-                "BPNL012345678910" //validation that only the right operands with the right pattern are allowed for the specific constraint (in the case of BusinessPartnerNumber it is string with pattern "^BPNL[0-9A-Z]{12}$") based on the policy-schema.json 
+                "BPNL012345678910" 
               ]
             }
           ]
