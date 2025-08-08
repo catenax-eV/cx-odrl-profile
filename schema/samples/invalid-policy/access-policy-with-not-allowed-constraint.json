@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/odrl.jsonld",
+    "https://w3id.org/catenax/2025/9/policy/",
+    {
+      "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+    }
+  ],
+  "@type": "Set",
+  "@id": "some-id",
+  "permission": [
+    {
+      "action": "access",
+      "constraint": [
+        {
+          "and": [
+            {
+              "leftOperand": "UsagePurpose",
+              "operator": "isAnyOf",
+              "rightOperand": [
+                "cx.dcm.base:1",
+                "cx.bpdm.pool:1"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
