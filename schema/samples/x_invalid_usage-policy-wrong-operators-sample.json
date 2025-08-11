@@ -1,0 +1,103 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/odrl.jsonld",
+    "https://w3id.org/catenax/2025/9/policy/context.jsonld"
+  ],
+  "@type": "Set",
+  "@id": "some-usage-policy-id",
+  "permission": [
+    {
+      "action": "use", 
+      "constraint": [
+        {
+          "and": [ 
+        {
+          "leftOperand": "FrameworkAgreement", 
+          "operator": "isAllOf", 
+          "rightOperand": "DataExchangeGovernance:2.0" 
+        }, 
+        {
+          "leftOperand": "ContractReference",
+          "operator": "isAnyOf",
+          "rightOperand": [
+              "ContractID250620197", "AGB9832", "ContractConstraint_Warranty", "ContractConstraint_DataQuality"
+         ]
+        },
+        {
+          "leftOperand": "Precedence",
+          "operator": "isAnyOf",
+          "rightOperand": "cx.precedence.contractReference:1"
+        },
+        {
+          "leftOperand": "UsagePurpose",
+          "operator": "eq",
+          "rightOperand": [
+            "cx.core.digitalTwinRegistry:1",
+            "cx.pcf.base:1",
+            "cx.circular.dpp:1",
+            "PublishDataOnCompanyWebPage",
+            "ModifyAndAmendData"
+          ]
+        },
+        {
+          "leftOperand": "AffiliatesRegion",
+          "operator": "eq",
+          "rightOperand": [
+            "cx.region.europe:1",
+            "cx.region.northAmerica:1"
+          ]
+        }
+        {
+          "leftOperand": "Warranty",
+          "operator": "isAnyOf",
+          "rightOperand": "cx.warranty.contractReference:1"
+        }
+        ]
+       }
+      ]
+     }
+   ],
+  "prohibition": [
+    {
+      "action": "use",
+      "constraint": [
+        {
+          "and": [
+        {
+          "leftOperand": "UsageRestriction",
+          "operator": "isAnyOf",
+          "rightOperand": [
+              "ExtraordinaryAnalyticsForbiddenRightOperand", 
+              "DataProviderRemovalForbiddenRightOperand"
+         ]
+        },
+        {
+          "leftOperand": "AffiliatesRegion",
+          "operator": "isAllOf",
+          "rightOperand": [
+            "cx.region.southAmerica:1",
+            "cx.region.asia:1"
+          ]
+        }
+        ]
+        }
+      ]
+    }
+  ],
+  "obligation": [
+    {
+      "action": "use",
+      "constraint": [
+        {
+          "and": [
+        {
+          "leftOperand": "DataProvisioningEndDate",
+          "operator": "isAnyOf",
+          "rightOperand": "2027-12-15T12:00:00Z"
+        }
+      ]
+      }
+    ]
+    }
+  ]
+}

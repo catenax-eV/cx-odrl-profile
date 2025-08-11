@@ -1,0 +1,83 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/odrl.jsonld",
+    "https://w3id.org/catenax/2025/9/policy/context.jsonld"
+  ],
+  "@type": "Set",
+  "@id": "some-usage-policy-id",
+  "permission": [
+    {
+      "action": "use", 
+      "constraint": [
+        {
+          "and": [ 
+        {
+          "leftOperand": "FrameworkAgreement", 
+          "operator": "eq", 
+          "rightOperand": "DataExchangeGovernance:2.0" 
+        }, 
+        {
+          "leftOperand": "UsagePurpose",
+          "operator": "isAnyOf",
+          "rightOperand": [
+            "cx.core.digitalTwinRegistry:1",
+            "cx.pcf.base:1",
+            "cx.circular.dpp:1",
+            "PublishDataOnCompanyWebPage",
+            "ModifyAndAmendData"
+          ]
+        }
+        ]
+       }
+      ]
+     }
+   ],
+  "prohibition": [
+    {
+      "action": "use",
+      "constraint": [
+        {
+          "and": [
+        {
+          "leftOperand": "UsageRestriction",
+          "operator": "isAllOf",
+          "rightOperand": [
+              "ExtraordinaryAnalyticsForbiddenRightOperand", 
+              "DataProviderRemovalForbiddenRightOperand"
+         ]
+        },
+        {
+          "leftOperand": "AffiliatesRegion",
+          "operator": "isAnyOf",
+          "rightOperand": [
+            "cx.region.southAmerica:1",
+            "cx.region.asia:1"
+          ]
+        },
+        {
+          "leftOperand": "Precedence",
+          "operator": "eq",
+          "rightOperand": "cx.precedence.contractReference:1"
+        }
+        ]
+        }
+      ]
+    }
+  ],
+  "obligation": [
+    {
+      "action": "use",
+      "constraint": [
+        {
+          "and": [
+        {
+          "leftOperand": "DataProvisioningEndDate",
+          "operator": "eq",
+          "rightOperand": "2027-12-15T12:00:00Z"
+        }
+      ]
+      }
+    ]
+    }
+  ]
+}
