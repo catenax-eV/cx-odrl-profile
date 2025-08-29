@@ -209,7 +209,7 @@
           "$ref": "#/definitions/UsagePermissionLogicalConstraint"
         },
         {
-          "$ref": "https://w3id.org/catenax/2025/9/policy/atomic-constraint-schemas.json#/definitions/AtomicUsagePermissionConstraint"
+          "$ref": "https://w3id.org/catenax/2025/9/policy/schema/atomic-constraint-schemas.json#/definitions/AtomicUsagePermissionConstraint"
         }
       ]
     },
@@ -234,7 +234,7 @@
           "$ref": "#/definitions/UsageProhibitionLogicalConstraint"
         },
         {
-          "$ref": "https://w3id.org/catenax/2025/9/policy/atomic-constraint-schemas.json#/definitions/AtomicProhibitionConstraint"
+          "$ref": "https://w3id.org/catenax/2025/9/policy/schema/atomic-constraint-schemas.json#/definitions/AtomicProhibitionConstraint"
         }
       ]
     },
