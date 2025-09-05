@@ -1,6 +1,6 @@
 {
   "@context": [
-    "http://www.w3.org/ns/odrl.jsonld",
+    "https://w3id.org/catenax/2025/9/policy/odrl.jsonld",
     "https://w3id.org/catenax/2025/9/policy/context.jsonld"
   ],
   "@type": "Set",
@@ -14,7 +14,7 @@
         {
           "leftOperand": "FrameworkAgreement",
           "operator": "eq", 
-          "rightOperand": "DataExchangeGovernance:2.0"
+          "rightOperand": "DataExchangeGovernance:1.0"
         },
         {
           "leftOperand": "UsagePurpose",
