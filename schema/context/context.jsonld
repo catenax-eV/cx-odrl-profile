@@ -1,7 +1,7 @@
 {
   "@context": {
     "cx-policy": "https://w3id.org/catenax/2025/9/policy/",
-    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "odrl": "https://w3id.org/catenax/2025/9/policy/odrl.jsonld",
     "access": {
       "@id": "cx-policy:access"
     },
