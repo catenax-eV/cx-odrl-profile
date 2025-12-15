@@ -83,11 +83,11 @@
     "VersionChanges": {
       "@id": "cx-policy:VersionChanges"
     },
-    "Warranty": {
-      "@id": "cx-policy:Warranty"
+    "WarrantyDefinition": {
+      "@id": "cx-policy:WarrantyDefinition"
     },
-    "WarrantyDuration": {
-      "@id": "cx-policy:WarrantyDuration"
+    "WarrantyDurationMonths": {
+      "@id": "cx-policy:WarrantyDurationMonths"
     }
   }
 }
