@@ -71,13 +71,6 @@
           ]
         },
         {
-          "leftOperand": "ManagedLegalEntityBpnl",
-          "operator": "isAnyOf",
-          "rightOperand": [
-            "BPNL125671234890"
-          ]
-        },
-        {
           "leftOperand": "DataUsageEndDefinition",
           "operator": "eq",
           "rightOperand": "cx.dataUsageEnd.unlimited:1"
@@ -106,8 +99,7 @@
           "leftOperand": "ConfidentialInformationSharing",
           "operator": "isAnyOf",
           "rightOperand": [
-            "cx.sharing.affiliates:1",
-            "cx.sharing.managedLegalEntity:1"
+            "cx.sharing.affiliates:1"
           ]
         },
         {
