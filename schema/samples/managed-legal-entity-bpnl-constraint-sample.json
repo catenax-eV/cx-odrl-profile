@@ -1,8 +1,0 @@
-{
-  "leftOperand": "ManagedLegalEntityBpnl",
-  "operator": "isAnyOf",
-  "rightOperand": [
-    "BPNL012345678910",
-    "BPNL543210987612"
-  ]
-}
